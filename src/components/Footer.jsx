@@ -1,4 +1,5 @@
 import React from "react";
+import Maps from "./Maps";
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
             <img src="/src/assets/Logo.png" alt="" width="100" height="100" />
           </div>
 
-          <div>maps</div>
+          <div className="border border-danger"><Maps/></div>
 
           <div className="d-flex ">
             <div className="p-3">
