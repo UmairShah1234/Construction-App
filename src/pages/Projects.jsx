@@ -15,9 +15,11 @@ const Projects = () => {
 
   return (
     <>
-      <div className="container">
-        <p className="h1">Explore Our Projects:</p>
-        <p className="h6">
+      <div className="container p-3">
+        <h3 className="">
+          <span className="border-bottom border-danger">Explore Our Projects:</span>
+        </h3>
+        <p className="p-1">
           Welcome to our portfolio of completed projects, where creativity meets
           excellence. Each project represents a testament to our commitment to
           innovation, quality, and client satisfaction. Browse through our
@@ -26,14 +28,17 @@ const Projects = () => {
           every detail. We look forward to sharing our journey and inviting you
           to be a part of our future projects. Your vision, our dedication.
         </p>
-        <p className="h5">Discover, Inspire, Collaborate!</p>
+        <h5 className="">
+          <span className="">Discover, Inspire, Collaborate!</span>
+        </h5>
+        <hr />
       </div>
-      <div className="container">
-        <button onClick={() => handleCategoryChange("all")} className="btn btn-outline-danger">All</button>
+      <div className="container mb-1 ">
+        <button onClick={() => handleCategoryChange("all")} className="btn btn-outline-danger rounded-0">All</button>
         <div className="btn-group mx-2">
           <button
             type="button"
-            className="btn btn-outline-danger dropdown-toggle"
+            className="btn btn-outline-danger  rounded-0 dropdown-toggle"
             data-bs-toggle="dropdown"
             aria-expanded="false"
             onClick={() => handleCategoryChange("ongoing")}
@@ -62,7 +67,7 @@ const Projects = () => {
         <div className="btn-group mx-2">
           <button
             type="button"
-            className="btn btn-outline-danger dropdown-toggle"
+            className="btn btn-outline-danger rounded-0 dropdown-toggle"
             data-bs-toggle="dropdown"
             aria-expanded="false"
             onClick={() => handleCategoryChange("completed")}
