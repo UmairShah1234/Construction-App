@@ -1,21 +1,21 @@
 import React from "react";
 import { KeyboardArrowRight } from "@mui/icons-material";
 import { Link } from "react-router-dom";
+import "./ProjectCard.css"
 const ProjectCard = ({ name, location }) => {
   return (
     <div className="row">
       <div className="col">
         <div
-          className="card  bg-light shadow-lg p-1 mx-1 my-1"
+          className="card position-relative bg-light shadow-lg p-1 mx-1 my-1"
           style={{ width: "20rem" }}
         >
           <img src="/src/assets/tolu-olubode-PlBsJ5MybGc-unsplash.jpg" alt="" />
-          <div className="card-body">
-            <div className="card-title">
+          <div className="card-body position-absolute trans_card d-flex flex-column justify-content-center align-items-center  text-dark">
+            <div className="card-title text-center">
               <h2>{name}</h2>
             </div>
-            <div className="card-title p-1">{location}</div>
-
+            <div className="card-title p-1 text-center">{location}</div>
             <Link
               to="/"
               // to={links}
