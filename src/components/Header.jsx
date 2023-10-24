@@ -6,7 +6,7 @@ const Header = () => {
     <nav className="navbar navbar-expand-lg navbar-light bg-light shadow-lg ">
       <div className="container-fluid">
         <Link className="navbar-brand ms-2" to="/">
-        <img src="/src/assets/Logo.png" alt="" width="50" height="50" />
+          <img src="/src/assets/Logo.png" alt="" width="50" height="50" />
         </Link>
         <button
           className="navbar-toggler"
@@ -31,10 +31,22 @@ const Header = () => {
                 About
               </Link>
             </li>
-            <li className="nav-item mx-3">
-              <Link className="nav-link" to="/projects">
+            <li className="nav-item dropdown mx-3">
+              <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
                 Projects
-              </Link>
+              </a>
+              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <Link to="/residential-projects" className="dropdown-item" href="#">
+                    Residential
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/commercial-projects" className="dropdown-item" href="#">
+                    Commercial
+                  </Link>
+                </li>
+              </ul>
             </li>
             <li className="nav-item mx-3">
               <Link className="nav-link" to="/">
@@ -48,7 +60,7 @@ const Header = () => {
             </li>
             <li className="nav-item mx-3">
               <Link className="nav-link" to="/contact-us">
-               Contact Us
+                Contact Us
               </Link>
             </li>
           </ul>

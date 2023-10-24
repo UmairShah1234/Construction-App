@@ -3,8 +3,11 @@ import "./App.css";
 import Layout from "./pages/Layout";
 import ErrorPage from "./pages/ErrorPage";
 import Home from "./pages/Home";
-import Projects from "./pages/Projects";
+
 import Contact from "./pages/Contact";
+import ResidentialProjects from "./pages/ResidentialProjects";
+import CommercialProjects from "./pages/CommercialProjects";
+import IndividualProject from "./components/IndividualProject";
 
 const router = createBrowserRouter([
   {
@@ -17,8 +20,16 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: '/projects',
-        element: <Projects />,
+        path: '/residential-projects',
+        element: <ResidentialProjects />,
+      },
+      {
+        path: '/commercial-projects',
+        element: <CommercialProjects />,
+      },
+      {
+        path: '/:project_name',
+        element: <IndividualProject />,
       },
       
       {

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import ProjectCard from "../components/ProjectCard";
-import projects from "../data/projects";
+import {residential_project} from "../data/projects";
 
-const Projects = () => {
+const ResidentialProjects = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [selectedSubCategory, setSelectedSubCategory] =
     useState("new_construction");
@@ -17,7 +17,7 @@ const Projects = () => {
     <>
       <div className="container p-3">
         <h3 className="">
-          <span className="border-bottom border-danger">Explore Our Projects:</span>
+          <span className="border-bottom border-danger">Explore Our Residential Projects:</span>
         </h3>
         <p className="p-1">
           Welcome to our portfolio of completed projects, where creativity meets
@@ -97,16 +97,17 @@ const Projects = () => {
       {selectedCategory === "all" ?
    
       <div className="d-flex justify-content-center row row-cols-lg-4 row-cols-1 ms-2">
-      {Object.keys(projects).map((cat) => (
+      {Object.keys(residential_project).map((cat) => (
    
-        Object.keys(projects[cat]).map((subcat) => (
+        Object.keys(residential_project[cat]).map((subcat) => (
       
-          projects[cat][subcat].map((project) => (
+          residential_project[cat][subcat].map((project) => (
            
             <ProjectCard
               key={project.project_id}
               name={project.project_name}
               location={project.location}
+              id={project.project_id}
             />
           ))
         ))
@@ -119,7 +120,7 @@ const Projects = () => {
           <div className="d-flex justify-content-center row row-cols-lg-4 row-cols-1 ms-2">
             {selectedSubCategory === "new_construction" ? (
               <>
-                {projects["ongoing"]["new_construction"].map((project) => (
+                {residential_project["ongoing"]["new_construction"].map((project) => (
                   <>
                     <ProjectCard
                       key={project.project_id}
@@ -131,7 +132,7 @@ const Projects = () => {
               </>
             ) : (
               <>
-                {projects["ongoing"]["restoration"].map((project) => (
+                {residential_project["ongoing"]["restoration"].map((project) => (
                   <>
                     <ProjectCard
                       key={project.project_id}
@@ -149,7 +150,7 @@ const Projects = () => {
           <div className="d-flex justify-content-center row row-cols-lg-4 row-cols-1 ms-2">
             {selectedSubCategory === "new_construction" ? (
               <>
-                {projects["completed"]["new_construction"].map((project) => (
+                {residential_project["completed"]["new_construction"].map((project) => (
                   <>
                     <ProjectCard
                       key={project.project_id}
@@ -161,7 +162,7 @@ const Projects = () => {
               </>
             ) : (
               <>
-                {projects["completed"]["restoration"].map((project) => (
+                {residential_project["completed"]["restoration"].map((project) => (
                   <>
                     <ProjectCard
                       key={project.project_id}
@@ -182,4 +183,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default ResidentialProjects;

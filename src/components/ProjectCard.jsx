@@ -2,7 +2,7 @@ import React from "react";
 import { KeyboardArrowRight } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 import "./ProjectCard.css"
-const ProjectCard = ({ name, location }) => {
+const ProjectCard = ({ id,name, location }) => {
   return (
     <div className="row">
       <div className="col">
@@ -17,7 +17,7 @@ const ProjectCard = ({ name, location }) => {
             </div>
             <div className="card-title p-1 text-center">{location}</div>
             <Link
-              to="/"
+              to={`/${name}`}
               // to={links}
               className="btn btn-outline-danger card-text text-dark rounded-0"
             >
