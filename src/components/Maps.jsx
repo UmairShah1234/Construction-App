@@ -14,8 +14,8 @@ const Maps = () => {
     lng: 72.8803242
   }
   const mapContainerStyle = {
-    width: "300px", // Set the width from props
-    height: "300px", // Set the height from props
+    width: "400px", // Set the width from props
+    height: "145px", // Set the height from props
   };
 // console.log(isLoaded)
   return (

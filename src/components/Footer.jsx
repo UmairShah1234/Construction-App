@@ -10,7 +10,7 @@ const Footer = () => {
             <img src="/src/assets/Logo.png" alt="" width="100" height="100" />
           </div>
 
-          <div className="border border-danger"><Maps/></div>
+          {/* <div className="border"><Maps/></div> */}
 
           <div className="d-flex ">
             <div className="p-3">
