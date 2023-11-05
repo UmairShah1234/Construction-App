@@ -8,6 +8,7 @@ import Contact from "./pages/Contact";
 import ResidentialProjects from "./pages/ResidentialProjects";
 import CommercialProjects from "./pages/CommercialProjects";
 import IndividualProject from "./components/IndividualProject";
+import ContactUs from "./pages/ContactUs";
 
 const router = createBrowserRouter([
   {
@@ -34,7 +35,7 @@ const router = createBrowserRouter([
       
       {
         path: "/contact-us",
-        element: <Contact />,
+        element: <ContactUs />,
       },
     ],
   },

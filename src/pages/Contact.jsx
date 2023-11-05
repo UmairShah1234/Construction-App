@@ -37,7 +37,7 @@ const Contact = () => {
     }
   };
   return (
-    <div className="bg-light text-dark p-3">
+    <div className="container d-flex justify-content-center bg-light text-dark d-flex p-3">
       {showSuccessAlert && (
         <div
           className="alert alert-success alert-dismissible fade show"
@@ -69,7 +69,7 @@ const Contact = () => {
         </div>
       )}
 
-      <div className="container p-3">
+      <div className=" p-3">
         <h3 className="card-title">Want To Connect with Us?</h3>
         <p>Fill the details given below to connect to us</p>
 
@@ -141,6 +141,17 @@ const Contact = () => {
             </button>
           </form>
         </div>
+      </div>
+      <div className="d-flex flex-column ">
+      <div className="card h-25 mb-3 shadow-lg">
+        <div className="card-body ">This is some text within a card body.</div>
+      </div>
+      <div className="card h-25 mb-3 shadow-lg">
+        <div className="card-body">This is some text within a card body.</div>
+      </div>
+      <div className="card h-25 mb-3 shadow-lg">
+        <div className="card-body">This is some text within a card body.</div>
+      </div>
       </div>
     </div>
   );

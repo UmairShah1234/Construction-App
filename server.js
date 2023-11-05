@@ -16,7 +16,7 @@ app.use(express.json());
 
 // contact us
 app.post('/api/send-email', (req, res) => {
-  const { name, email, message } = req.body;
+  const { fname,lname, phone, email, message } = req.body;
 
   // Configure the SMTP transporter (use your email provider's SMTP settings)
   const transporter = nodemailer.createTransport({
@@ -31,7 +31,7 @@ app.post('/api/send-email', (req, res) => {
     from: "devlanzzer@gmail.com",
     to: 'devlanzzer@gmail.com',
     subject: 'New Contact Form Submission of Construction Site',
-    text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
+    text: `Name: ${fname} ${lname}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
   };
 
   transporter.sendMail(mailOptions, (error, info) => {

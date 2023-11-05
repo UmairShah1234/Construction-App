@@ -1,0 +1,129 @@
+.form{
+    grid-area: form;
+}
+.info{
+    grid-area: info;
+}
+.map{
+    grid-area: map;
+}
+.contact{
+    padding:40px;
+    background: #ffff; 
+    box-shadow: 0 5px 35px rgba(0,0,0,0.15);
+}
+.contact-us {
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: "form info"
+    "form map";
+grid-gap: 20px;
+}
+ .contact-us  .contactForm .formBox{
+position: relative;
+/* display: flex;
+
+justify-content: space-between;
+flex-wrap: wrap; */
+padding-top: 40px; 
+}
+.contact-us  .contactForm .formBox .inputBox{
+    position: relative;
+   
+    margin-bottom: 35px;
+
+}
+/* .contact-us  .contactForm .formBox .inputBox .w50{
+    width: 90%;
+}
+.contact-us .contactForm .formBox .inputBox .w100{
+    width: 100%;
+} */
+.contact-us  .contactForm .formBox .inputBox input,
+.contact-us  .contactForm .formBox .inputBox textarea
+{
+    width: 100%;
+    resize: none;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #777;
+
+}
+.contact-us  .contactForm .formBox .inputBox textarea{ 
+    height: 80px;
+}
+.contact-us  .contactForm .formBox .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    pointer-events: none;
+    font-size: 18px;
+    font-weight: 300;
+    transition: 0.3s;
+}
+.contact-us  .contactForm .formBox .inputBox input:focus ~ span,
+.contact-us  .contactForm .formBox .inputBox input:valid ~ span,
+.contact-us  .contactForm .formBox .inputBox textarea:focus ~ span,
+.contact-us .contactForm .formBox .inputBox textarea:valid ~ span 
+{
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #095a55;
+}
+
+/* information */
+
+.info .infoBox div{
+    /* background-color: rgb(255, 123, 123); */
+   margin-bottom: 10px;
+   display: flex;
+   align-items: center;
+ 
+
+}
+.info .infoBox span{
+    min-width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 123, 123); ;
+    font-size: 1.5em;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+/* maps */
+.map{
+    padding: 0;
+}
+/* responisve */
+@media (max-width: 1200px){
+
+    .contact-us{
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "form"
+    "info"
+    "map";
+    }
+    .formBox{
+        flex-direction: column;
+    }
+    .inputBox{
+        width: 100%;
+    }
+    .map{
+        min-height: 300px;
+    }
+}
