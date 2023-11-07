@@ -1,11 +1,19 @@
 import React from "react";
 import NumberCard from "../components/NumberCard";
 import ChooseCard from "../components/ChooseCard";
+import AboutHome from "../components/AboutHome";
 
 const Home = () => {
   return (
     <div>
       <div className="container">
+        {/* carousel component */}
+        
+
+        {/* about section */}
+        <AboutHome />
+
+
         {/* box section */}
         <div className="row m-3">
           <div className="col-md-3">

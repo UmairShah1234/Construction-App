@@ -3,8 +3,8 @@ import React from "react";
 
 const ChooseCard = () => {
   return (
-    <div className="card">
-      <div className="d-flex flex-column m-1 shadow-lg  p-3">
+    <div className="">
+      <div className="d-flex flex-column m-1   p-3">
         <div className="text-center">
           <SupportAgent sx={{ fontSize: 100 }} />
         </div>
