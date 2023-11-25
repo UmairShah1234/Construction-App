@@ -3,9 +3,15 @@ import ProjectCard from "../components/ProjectCard";
 import {residential_project} from "../data/projects";
 
 const ResidentialProjects = () => {
-  const [selectedCategory, setSelectedCategory] = useState("all");
+  const [selectedCategory, setSelectedCategory] = useState('all');
+
   const [selectedSubCategory, setSelectedSubCategory] =
     useState("new_construction");
+
+  // const handleBtnClick = () => {
+   
+  //   setSelectedCategory(!isSelected);
+  // }
   const handleCategoryChange = (category) => {
     setSelectedCategory(category);
   };
@@ -33,15 +39,24 @@ const ResidentialProjects = () => {
         </h5>
         <hr />
       </div>
-      <div className="container mb-1 ">
-        <button onClick={() => handleCategoryChange("all")} className="btn btn-outline-danger rounded-0">All</button>
+      <div className="container mb-1">
+        <button
+         onClick={() => {
+          // handleBtnClick("all")
+          handleCategoryChange("all")
+        
+        }} 
+         
+         className={`btn btn-outline-danger rounded-2`}>All</button>
         <div className="btn-group mx-2">
           <button
             type="button"
-            className="btn btn-outline-danger  rounded-0 dropdown-toggle"
+            className={`btn btn-outline-danger rounded-2 dropdown-toggle`}
             data-bs-toggle="dropdown"
             aria-expanded="false"
-            onClick={() => handleCategoryChange("ongoing")}
+            onClick={() => {
+              // handleBtnClick("ongoing")
+              handleCategoryChange("ongoing")}}
           >
             Ongoing
           </button>
@@ -65,12 +80,15 @@ const ResidentialProjects = () => {
           </ul>
         </div>
         <div className="btn-group mx-2">
+        {/* ${selectedCategory==="completed"? 'btn-danger ' : 'btn-outline-danger'} */}
           <button
             type="button"
-            className="btn btn-outline-danger rounded-0 dropdown-toggle"
+            className={`btn btn-outline-danger  rounded-2 dropdown-toggle `}
             data-bs-toggle="dropdown"
             aria-expanded="false"
-            onClick={() => handleCategoryChange("completed")}
+            onClick={() => {
+              // handleBtnClick("completed")
+              handleCategoryChange("completed")}}
           >
             Completed
           </button>
@@ -96,7 +114,9 @@ const ResidentialProjects = () => {
       </div>
       {selectedCategory === "all" ?
    
-      <div className="d-flex justify-content-center row row-cols-lg-4 row-cols-1 ms-2">
+      <div 
+      className="d-flex justify-content-center align-items-center row row-cols-sm-4 row-cols-1 ms-2"
+      >
       {Object.keys(residential_project).map((cat) => (
    
         Object.keys(residential_project[cat]).map((subcat) => (
@@ -117,7 +137,7 @@ const ResidentialProjects = () => {
       <>
       {selectedCategory === "ongoing" ? (
         <>
-          <div className="d-flex justify-content-center row row-cols-lg-4 row-cols-1 ms-2">
+          <div className=" d-flex justify-content-center align-items-center row row-cols-sm-4 row-cols-1 ms-2">
             {selectedSubCategory === "new_construction" ? (
               <>
                 {residential_project["ongoing"]["new_construction"].map((project) => (
@@ -147,7 +167,7 @@ const ResidentialProjects = () => {
         </>
       ) : (
         <>
-          <div className="d-flex justify-content-center row row-cols-lg-4 row-cols-1 ms-2">
+          <div className=" d-flex justify-content-center align-items-center row row-cols-sm-4 row-cols-1 ms-2">
             {selectedSubCategory === "new_construction" ? (
               <>
                 {residential_project["completed"]["new_construction"].map((project) => (

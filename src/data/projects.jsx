@@ -60,32 +60,50 @@ export const residential_project =  {
       "new_construction": [
         {
           "project_id": "8",
-          "project_name": "Res Shopping Mall",
-          "location": "City D",
+          "project_name": "BOHRA TRUST MASJID COMPLEX",
+          "location": "Alot, Vikramgarh, Ratlam,(M.P.)",
+          "square_ft": "1,80,00,000.00 SQ.FT", //unknow
+          "architect": "M/s. Aesthetic Designs J.A.CHAHWALA",
           "start_date": "2020-02-15",
           "end_date": "2021-05-30"
         },
         {
           "project_id": "9",
-          "project_name": "Res parking lot",
-          "location": "City D",
+          "project_name": "H.A.HOUSE BUNGLOW",
+          "location": "FATEHPUR SHEKHAWATI, DIST. SIKAR, RAJASTHAN",
+          "square_ft": "1,80,00,000.00 SQ.FT", //unknown
+          "architect": "MR.VINAYAK SAHASRABUDHE",
           "start_date": "2020-02-15",
           "end_date": "2021-05-30"
         },
         {
           "project_id": "10",
-          "project_name": "Res High School",
-          "location": "City D",
+          "project_name": "MR. MOHD. TAHER GULAM ABBAS. BUNGLOW",
+          "location": "KHAMBHAT GUJARAT",
+          "square_ft": "23,000SQ.FT",
+          "architect": "M/s. Aesthetic Designs J.A.CHAHWALA",
           "start_date": "2020-02-15",
           "end_date": "2021-05-30"
         },
         {
           "project_id": "11",
-          "project_name": "Res Play Ground",
-          "location": "City D",
+          "project_name": "MUTHA CONSTRUCTION",
+          "location": "SAHAD, TALUKA KALYAN.",
+          "square_ft": "2.25 Lakh Sqft.",  
+          "architect": "ARCH. SHOBHANA DESHPANDE",
           "start_date": "2020-02-15",
           "end_date": "2021-05-30"
         },
+        {
+          "project_id": "12",
+          "project_name": "DOWOODI BOHRA TRUST MASJID",
+          "location": "MAHESHWAR, NEAR INDOR, MP.",
+          "square_ft": "16554 SQ.FT", 
+          "architect": "ARCHITECT I.M. ASSOCIATE R.C.C. J.J. KIKANI",
+          "start_date": "2020-02-15",
+          "end_date": "2021-05-30"
+        },
+        
       ],
       "restoration": [
         {
@@ -112,14 +130,16 @@ export const residential_project =  {
       "new_construction": [
         {
           "project_id": "1",
-          "project_name": "Com New Office Building",
-          "location": "City A",
+          "project_name": "commercil Complex",
+          "location": "YAVATMAL, MAHARASHTRA",
+          "square_ft": "2 LACS SQ.FT",
+          "architect": "MR.VINAYAK SAHASRABUDHE",
           "start_date": "2023-01-15",
           "end_date": "2023-12-31"
         },
         {
           "project_id": "2",
-          "project_name": "Residential Complex",
+          "project_name": "commercial Complex",
           "location": "City B",
           "start_date": "2023-03-10",
           "end_date": "2024-06-30"
@@ -167,32 +187,42 @@ export const residential_project =  {
       "new_construction": [
         {
           "project_id": "8",
-          "project_name": "Com Shopping Mall",
-          "location": "City D",
+          "project_name": "ST.ALOYSIUS CONVENT SCHOOL (  DIVINE CHILD HIGH SCHOOL)",
+          "location": "YAVATMAL, MAHARASHTRA",
+          "square_ft": "2 LACS SQ.FT",
+          "architect": "MR.VINAYAK SAHASRABUDHE",
           "start_date": "2020-02-15",
           "end_date": "2021-05-30"
         },
         {
           "project_id": "9",
-          "project_name": "Com parking lot",
-          "location": "City D",
+          "project_name": "SHIVAM FABRICS PVT LTD",
+          "location": "WALIV PHATTA,VASAI ( E ), THANE",
+          "square_ft": "40,000SQ.FT",
+          "architect": "MR. SUNIL SHAH (Kala Chakara)",
           "start_date": "2020-02-15",
           "end_date": "2021-05-30"
         },
         {
           "project_id": "10",
-          "project_name": "Coms High School",
-          "location": "City D",
+          "project_name": "PRABHAT ELASTOMERS PVT. LTD.",
+          "location": "G.I.D.C. SARIGAM, UMERGAM, DISTRICT- VALSAD.          ",
+          "square_ft": "78,000SQ.FT",
+          "architect": "MR. KIRIT BHATT",
           "start_date": "2020-02-15",
           "end_date": "2021-05-30"
         },
         {
           "project_id": "11",
-          "project_name": "Com Play Ground",
-          "location": "City D",
+          "project_name": "ASMITA SCHOOL",
+          "location": "WESTERN EXPRESS HIHGWAY JOGESHWARI (E),MUMBAI-400060.",
+          "square_ft": "32,200SQ.FT", 
+          "architect": "ARCHITECT ARCH- UNIQUER.C.C M/S DAMBLE & THAKURDESAI",
           "start_date": "2020-02-15",
           "end_date": "2021-05-30"
         },
+       
+    
       ],
       "restoration": [
         {
