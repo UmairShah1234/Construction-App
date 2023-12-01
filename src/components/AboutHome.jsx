@@ -3,9 +3,10 @@ import React from "react";
 const AboutHome = () => {
   return (
     <div className="border-top m-1">
-      <div className="container d-flex">
+      <div className="container row p-5 ">
+
         <div className="col-md-6 text-center">
-          <img src="/src/assets/Logo.png" alt="" width="100" height="100" />
+          <img src="https://jaatvedas.com/images/about-1.png" alt="" width="500" height="500" />
         </div>
         <div className="card-body col-md-6">
           <h3>
