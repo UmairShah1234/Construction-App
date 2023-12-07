@@ -9,6 +9,7 @@ import ResidentialProjects from "./pages/ResidentialProjects";
 import CommercialProjects from "./pages/CommercialProjects";
 import IndividualProject from "./components/IndividualProject";
 import ContactUs from "./pages/ContactUs";
+import About from "./pages/About";
 
 const router = createBrowserRouter([
   {
@@ -32,10 +33,13 @@ const router = createBrowserRouter([
         path: '/:project_name',
         element: <IndividualProject />,
       },
-      
       {
         path: "/contact-us",
         element: <ContactUs />,
+      },
+      {
+        path: "/profile",
+        element: <About />,
       },
     ],
   },

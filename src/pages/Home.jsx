@@ -9,12 +9,11 @@ import CarouselComp from "../components/CarouselComp";
 const Home = () => {
   return (
     <div>
+      {/* carousel component */}
+      <div className="my-3">
+        <CarouselComp />
+      </div>
       <div className="container">
-        {/* carousel component */}
-        <div className="my-3">
-          <CarouselComp />
-        </div>
-
         {/* about section */}
         <AboutHome />
 
