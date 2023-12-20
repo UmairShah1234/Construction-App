@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
+import HomeIcon from '@mui/icons-material/Home';
 import { Link } from "react-router-dom";
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
@@ -47,8 +47,9 @@ const ContactUs = () => {
   };
   return (
     <>
-      
-      <div className="contact-us  bg-danger p-3">
+      <div className="container ">
+      <div className="contact-us mt-3 p-3">
+        {/* <div className="col-lg-6"> */}
         <div className="contact form contactForm ">
         {showSuccessAlert && (
         <div
@@ -79,11 +80,11 @@ const ContactUs = () => {
             aria-label="Close"
           />
         </div>
-      )}
-          <h3 className="card-title ">Want To Connect with Us?</h3>
-          <p>Fill the details given below to connect to us</p>
+      )} <h6>Contact Now</h6>
 
-          <hr />
+          <h2 className="card-title ">Want To Connect with Us?</h2>
+          <p className="mb60 mt20">Fill the details given below to connect to us</p>
+
 
           <form onSubmit={handleSubmit}>
             <div className="formBox row g-2">
@@ -167,49 +168,72 @@ const ContactUs = () => {
             </div>
           </form>
         </div>
-
-        <div className="contact info ">
-          <h3>Contact Info</h3>
+        {/* </div> */}
+        {/* <div className="col-lg-5"> */}
+        <div className=" info phone ">
+          
           <div className="infoBox  ">
-            <div className="">
-              <span>
-                <LocationOnIcon />
+           
+           
+              <span className="infoBoxh3">
+                <PhoneIphoneIcon /> Phone:
               </span>
-              <p>
-                B-206, NAVKAR CHAMBER, MAROL NAKA,ANDHERI KURLA ROAD, ANDHERI
-                EAST, Mumbai-400059, Maharashtra <br />
-                INDIA
-              </p>
-            </div>
-            <div className="">
-              <span>
-                <EmailIcon />
-              </span>
+     
+
+              <p>Assistance hours: Monday – Saturday, 9.30 am to 6.30 pm</p>
               <Link
-                className="text-dark text-decoration-none"
-                to={`mailto:${emailAddress}`}
-              >
-                devlanzzer@gmail.com
-              </Link>
-            </div>
-            <div className="">
-              <span>
-                <PhoneIphoneIcon />
-              </span>
-              <Link
-                className="text-dark text-decoration-none"
+                className="infoBoxlink "
                 to={`tel: ${mobileNum}`}
               >
                 +91 8692881750
               </Link>
               {/* if we want to put social media icons */}
-            </div>
+           
           </div>
         </div>
-        <div className="contact map ">
+        <div className=" info email ">
+         
+          <div className="infoBox  ">
+           
+
+              <span className="infoBoxh3">
+                <EmailIcon /> Email:
+              </span>
+         
+              <p>Our support team will get back to in 24-h during<br /> standard business hours.</p>
+              <Link
+                className="infoBoxlink "
+                to={`mailto:${emailAddress}`}
+              >
+                devlanzzer@gmail.com
+              </Link>
+            
+          </div>
+        </div>
+        <div className=" info address ">
+          
+          <div className="infoBox  ">
+   
+              <span className="infoBoxh3">
+                <HomeIcon /> Address:
+              </span>
+
+              <p>
+                B-206, NAVKAR CHAMBER, MAROL NAKA,ANDHERI KURLA ROAD, ANDHERI
+                EAST, Mumbai-400059, Maharashtra <br />
+                INDIA
+              </p>
+           
+           
+          </div>
+        </div>
+        {/* </div> */}
+        
+      </div>
+      </div>
+      <div className="map ">
           <Maps />
         </div>
-      </div>
     </>
   );
 };

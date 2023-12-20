@@ -5,6 +5,7 @@ import AboutHome from "../components/AboutHome";
 import Title from "../components/Title";
 import ProjectCard from "../components/ProjectCard";
 import CarouselComp from "../components/CarouselComp";
+import { clients } from "../data/clients";
 
 const Home = () => {
   return (
@@ -105,86 +106,12 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="mt-3">
+          <div className="mt-3 mb-5">
             <h3></h3>
             <marquee>
-              <img
-                src="https://www.investopedia.com/thmb/yWopXC98WleAk2BKf0jgqcDUM2E=/fit-in/1500x1000/filters:format(png):fill(white):max_bytes(150000):strip_icc()/bofa_lo2_rgb_Digital-20d4dc2ee16d4412a0722dd5923c13e7.jpg"
-                alt=""
-                height={150}
-                width={200}
-                className="mx-1"
-              />
-              <img
-                src="https://seeklogo.com/images/M/McLaren-logo-6D13A50642-seeklogo.com.png"
-                alt=""
-                height={150}
-                width={200}
-                className="mx-1"
-              />
-              <img
-                src="https://upload.wikimedia.org/wikipedia/en/c/cd/ICAI_logo.png"
-                alt=""
-                height={150}
-                width={200}
-                className="mx-1"
-              />
-              <img
-                src="https://upload.wikimedia.org/wikipedia/en/2/21/Red_Chillies_Entertainment_logo.png"
-                alt=""
-                height={150}
-                width={200}
-                className="mx-1"
-              />
-              <img
-                src="https://getvectorlogo.com/wp-content/uploads/2018/12/icici-bank-vector-logo.png"
-                alt=""
-                height={150}
-                width={200}
-                className="mx-1"
-              />
-              <img
-                src="https://i.pinimg.com/originals/74/ea/81/74ea81de637ec497ca21a83bfd4b886f.png"
-                alt=""
-                height={150}
-                width={200}
-                className="mx-1"
-              />{" "}
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/HDFC_Bank_Logo.svg/2560px-HDFC_Bank_Logo.svg.png"
-                alt=""
-                height={150}
-                width={200}
-                className="mx-1"
-              />{" "}
-              <img
-                src="https://blog.logomyway.com/wp-content/uploads/2021/06/monster-logo-2-1.jpg"
-                alt=""
-                height={150}
-                width={200}
-                className="mx-1"
-              />{" "}
-              <img
-                src="https://1000logos.net/wp-content/uploads/2021/04/Red-Bull-logo.png"
-                alt=""
-                height={150}
-                width={200}
-                className="mx-1"
-              />
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/T-series-logo.svg/1317px-T-series-logo.svg.png"
-                alt=""
-                height={150}
-                width={200}
-                className="mx-1"
-              />
-              <img
-                src="https://static.brandirectory.com/logos/dhla001_a08f794d_91af_4b74_83b4_82f7356c232d.jpg"
-                alt=""
-                height={150}
-                width={200}
-                className="mx-1"
-              />
+              {clients.map((client) => (
+                 <img src={client.img} className="img-fluid me-4" alt="certificate"  />
+              ))}
             </marquee>
           </div>
         </div>

@@ -2,25 +2,52 @@
 .form{
     grid-area: form;
 }
-.info{
-    grid-area: info;
+.phone{
+    grid-area: phone;
 }
-.map{
-    grid-area: map;
+.email{
+    grid-area: email;
+}
+.address{
+    grid-area: address;
 }
 .contact{
-    padding:40px;
+    padding: 10px 20px 20px 10px
+  
+    /* background: #ffff;  */
+    /* box-shadow: 0 5px 35px rgba(0,0,0,0.15); */
+}
+.info{
+   
+    padding:10px 10px 10px 30px;  /*  top right bottom left*/
+    background: #ffff; 
+    color: #6a6a8e;
+    box-shadow: 0 3.4px 2.7px -30px rgba(0,0,0,.059), 0 8.2px 8.9px -30px rgba(0,0,0,.071), 0 25px 40px -30px rgba(0,0,0,.2);
+}
+/* .info{
+    padding: 10px;
+    margin-bottom: 8px;
     background: #ffff; 
     box-shadow: 0 5px 35px rgba(0,0,0,0.15);
-}
+} */
 .contact-us {
     position: relative;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 5fr 4fr;
-    grid-template-areas: "form info"
-    "form map";
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows:auto; 
+    grid-template-areas: "form phone"
+    "form email"
+    "form address";
 grid-gap: 20px;
+}
+.phone{
+    background: #fff8f2;
+}
+.email{
+    background: #ffecec;
+}
+.address{
+    background: #eafffd;
 }
  .contact-us  .contactForm .formBox{
 position: relative;
@@ -36,6 +63,7 @@ padding-top: 40px;
     margin-bottom: 35px;
 
 }
+
 /* .contact-us  .contactForm .formBox .inputBox .w50{
     width: 90%;
 }
@@ -68,6 +96,9 @@ padding-top: 40px;
     font-weight: 300;
     transition: 0.3s;
 }
+.contact-us  .contactForm .formBox .inputBox button{
+    width: 100%;
+}
 .contact-us  .contactForm .formBox .inputBox input:focus ~ span,
 .contact-us  .contactForm .formBox .inputBox input:valid ~ span,
 .contact-us  .contactForm .formBox .inputBox textarea:focus ~ span,
@@ -79,11 +110,31 @@ padding-top: 40px;
     letter-spacing: 1px;
     color: #095a55;
 }
+.infoBoxh3{
+    font-size: 2rem;
+    font-weight: 700;
+    /* font-family: "Font Awesome 5 Free"; */
+}
+.infoBox p{
+    font-size: 1.3rem;
+    line-height: 28px;
+    margin: 10px 0 10px;
+}
+.infoBoxlink{
+    font-size: 1.1rem;
+    color: inherit;
+    font-weight: 600;
+    text-decoration: none;
+}
+.infoBoxlink:hover{
+    color: #6a6a8e;
+}
+
 
 /* information */
 
-.info .infoBox div{
-    /* background-color: rgb(255, 123, 123); */
+/* .info .infoBox div{
+    /* background-color: rgb(255, 123, 123);
    margin-bottom: 10px;
    display: flex;
    align-items: center;
@@ -100,12 +151,51 @@ padding-top: 40px;
     font-size: 1.5em;
     border-radius: 50%;
     margin-right: 15px;
-}
+} */
 
 /* maps */
 .map{
-    padding: 0;
+    margin-top: 30px;
+  width: 100vw;
+  height: 500px;
 }
+
+
+
+/* client page */
+
+.heading span{
+    color: #e60072;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 0 15px;
+    display: block;
+}
+
+.brand-logo{
+   max-width: 180px;
+    margin: 0 auto;
+    padding: 10px;
+    /* height: 10px; */
+
+}
+.certifcate-img{
+   max-width: 250px;
+    margin: 0 auto;
+    padding: 10px;
+    /* height: 10px; */
+
+}
+
+
+/* footer */
+.footer{
+    background-image: url("/src/assets/layered-waves-haikei.png");
+}
+
+
 /* responisve */
 @media (max-width: 1200px){
 
@@ -115,8 +205,9 @@ padding-top: 40px;
         grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "form"
-    "info"
-    "map";
+    "phone"
+    "email"
+    "address";
     }
     .formBox{
         flex-direction: column;
@@ -124,7 +215,8 @@ padding-top: 40px;
     .inputBox{
         width: 100%;
     }
-    .map{
+    /* .map{
         min-height: 300px;
-    }
+    } */
+    
 }

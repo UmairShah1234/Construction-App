@@ -10,6 +10,8 @@ import CommercialProjects from "./pages/CommercialProjects";
 import IndividualProject from "./components/IndividualProject";
 import ContactUs from "./pages/ContactUs";
 import About from "./pages/About";
+import Clients from "./pages/Clients";
+import Certificates from "./pages/Certificates";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +34,14 @@ const router = createBrowserRouter([
       {
         path: '/:project_name',
         element: <IndividualProject />,
+      },
+      {
+        path: '/clients',
+        element: <Clients />,
+      },
+      {
+        path: '/certificate',
+        element: <Certificates />,
       },
       {
         path: "/contact-us",

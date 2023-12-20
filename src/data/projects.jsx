@@ -5,18 +5,23 @@ export const residential_project =  {
       "new_construction": [
         {
           "project_id": "1",
-          "project_name": "Res New Office Building",
-          "location": "City A",
+          "project_name": "Gopal Sons",
+          "location": "Gopal Nagri Umbroli Dombivli East.",
+          "square_ft": "8.50 Lakh Sqft.", 
+          "architect": "ARCHITECT MR.VINAYAK SAHASRABUDHE",
           "start_date": "2023-01-15",
           "end_date": "2023-12-31"
         },
         {
           "project_id": "2",
-          "project_name": "Res Residential Complex",
-          "location": "City B",
-          "start_date": "2023-03-10",
-          "end_date": "2024-06-30"
+          "project_name": "RAJ BABBAR BUNGLOW",
+          "location": "JVPD ROAD MUMBAI.",
+          "square_ft": "8.50 Lakh Sqft.",  //unkown
+          "architect": "ARCHITECT MR.ROHIT SHAH RCC CONSULTANT VORA ASSOCIATE",
+          "start_date": "2023-01-15",
+          "end_date": "2023-12-31"
         },
+        
         {
           "project_id": "3",
           "project_name": "Res Complex",
@@ -108,18 +113,31 @@ export const residential_project =  {
       "restoration": [
         {
           "project_id": "5",
-          "project_name": "Res Old Library Restoration",
-          "location": "City E",
+          "project_name": "DARGAH-E-HAKIMI ",
+          "location": "JOHAR BLOCK, MAWAID AT. BURHANPUR, M.P.",
+          "square_ft": "1,80,00,000.00 SQ.FT", //unknow
+          "architect": "MR. C.G.PATEL",
           "start_date": "2019-10-10",
           "end_date": "2020-12-20"
         },
         {
           "project_id": "6",
-          "project_name": "Res Mansion Refurbishment",
-          "location": "City F",
+          "project_name": "SHRI RAJ BABBAR (M.P.)",
+          "location": "J.V.P.D. SCHEAM, JUHU, MUMBAI.400049",
+          "square_ft": "9,000SQ.FT", //unknow
+          "architect": "MR. A.Z. VASI MR. ROHIT SHAH",
           "start_date": "2018-04-05",
           "end_date": "2019-06-15"
-        }
+        },
+        {
+          "project_id": "7",
+          "project_name": "SUNIL GEHI.",
+          "location": "Bungalow No-02, Girikandra Society, Lonavala, Maha.",
+          "square_ft": "9,000SQ.FT", //unknow
+          "architect": "Architect. Mr.Parag Shah",
+          "start_date": "2018-04-05",
+          "end_date": "2019-06-15"
+        },
       ]
     }
   }
@@ -162,17 +180,21 @@ export const residential_project =  {
       "restoration": [
         {
           "project_id": "5",
-          "project_name": "Com Historic Theater Renovation",
-          "location": "City C",
+          "project_name": "SILVER POINT PRESS PVT. LTD.",
+          "location": "A, 403, TTC INDUSTRIAL AREA MIDC, MAHAPE,NAVI MUMBAI 400709.",
+          "square_ft": "8.50 Lakh Sqft.", //unknown
+          "architect": "Mr. JEEVAN JADHAV RCC CONSULTANT",
           "start_date": "2022-07-20",
           "end_date": "2023-09-15"
         },
         {
           "project_id": "6",
-          "project_name": "Com School Renovate",
-          "location": "City C",
-          "start_date": "2022-07-20",
-          "end_date": "2023-09-15"
+          "project_name": "CRYSTALINE EXPORTS LTD.",
+          "location": "133, MAROL CO.OP. IND. LTD. ANDHERI (E), MUMBAI-400 072.",
+          "square_ft": "8.50 Lakh Sqft.", //unknow
+          "architect": "M/S.VORA & ASSOCIATES MR. ASHIT VORA",
+          "start_date": "2023-03-10",
+          "end_date": "2024-06-30"
         },
         {
           "project_id": "7",
@@ -227,15 +249,19 @@ export const residential_project =  {
       "restoration": [
         {
           "project_id": "5",
-          "project_name": "Com Old Library Restoration",
-          "location": "City E",
+          "project_name": "TEX CENTRE PERMISES C.S.LTD. ",
+          "location": "CHANDIVALI, SAKINAKA, MUMBAI- 400 072.",
+          "square_ft": "1,80,00,000.00 SQ.FT", //unknow
+          "architect": "MR. SHATISH AGARWAL",
           "start_date": "2019-10-10",
           "end_date": "2020-12-20"
         },
         {
           "project_id": "6",
-          "project_name": "Com Mansion Refurbishment",
-          "location": "City F",
+          "project_name": "DIVINE CHILDHIGH SCHOOL",
+          "location": "CHAKALA, ANDHERI (E)",
+          "square_ft": "1,80,00,000.00 SQ.FT", //unknow
+          "architect": "MR.VINAYAK SAHASRABUDHE",
           "start_date": "2018-04-05",
           "end_date": "2019-06-15"
         }
