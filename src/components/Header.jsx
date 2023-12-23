@@ -1,9 +1,8 @@
-import { Badge } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light  shadow-lg  ">
+    <nav className="navbar navbar-expand-lg navbar-light shadow-lg phone">
       <div className="container-fluid">
         <Link className="navbar-brand ms-2" to="/">
           <img src="/src/assets/Logo.png" alt="" width="50" height="50" />
@@ -32,10 +31,10 @@ const Header = () => {
               </Link>
             </li>
             <li className="nav-item dropdown mx-3 ">
-              <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+              <a className="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
                 Projects
               </a>
-              <ul className="dropdown-menu shadow" aria-labelledby="navbarDropdown">
+              <ul className="dropdown-menu mt-3  phone" aria-labelledby="navbarDropdown">
                 <li>
                   <Link to="/residential-projects" className="dropdown-item" href="#">
                     Residential
