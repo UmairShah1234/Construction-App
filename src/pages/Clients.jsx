@@ -4,11 +4,11 @@ import { clients } from "../data/clients";
 const Clients = () => {
   return (
     <>
-      <div className="container mb-5">
+      <div className="container mb-5 p-3">
         <div className="heading mt-2 text-center">
-          <span className=""> Our Happy Customers</span>
-          <h2 className="mb-30">Some Of Our Clients</h2>
-          <p className="p-1">
+          <span className="">Our Happy Customers</span>
+          <h2 className="">Some Of Our Clients</h2>
+          <p className="p-3">
             We take immense pride in our collaboration with these exceptional
             organizations and individuals. Their trust in our services and
             products has been the cornerstone of our success. Thank you to each
@@ -19,11 +19,11 @@ const Clients = () => {
             A Heartfelt 'Thank You' to Our Clients!
           </p>
         </div>
-        <div className="row row-cols-4">
+        <div className="row row-cols-3">
         {/* className="img-fluid" */}
         {clients.map((client) => (
           <>
-              <div className="col clients-logos d-flex justify-content-center  align-items-center text-center ">
+              <div className="col border border-2 p-1 clients-logos d-flex justify-content-center  align-items-center text-center ">
                 <div className="brand-logo">
                   {" "}
                   <img src={client.img} className="img-fluid " alt="clients"  />

@@ -1,10 +1,10 @@
 import { SupportAgent } from "@mui/icons-material";
 import React from "react";
 
-const ChooseCard = () => {
+const ChooseCard = ({ color }) => {
   return (
     <div className="">
-      <div className="d-flex flex-column m-1   p-3">
+      <div className={`d-flex flex-column m-1 info ${color == 1 ? "phone" : "email"} p-3`}>
         <div className="text-center">
           <SupportAgent sx={{ fontSize: 100 }} />
         </div>

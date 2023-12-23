@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light shadow-lg ">
+    <nav className="navbar navbar-expand-lg navbar-light  shadow-lg  ">
       <div className="container-fluid">
         <Link className="navbar-brand ms-2" to="/">
           <img src="/src/assets/Logo.png" alt="" width="50" height="50" />
@@ -31,11 +31,11 @@ const Header = () => {
                 About
               </Link>
             </li>
-            <li className="nav-item dropdown mx-3">
+            <li className="nav-item dropdown mx-3 ">
               <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
                 Projects
               </a>
-              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul className="dropdown-menu shadow" aria-labelledby="navbarDropdown">
                 <li>
                   <Link to="/residential-projects" className="dropdown-item" href="#">
                     Residential

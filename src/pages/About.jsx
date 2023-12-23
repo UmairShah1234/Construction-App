@@ -20,7 +20,7 @@ const About = () => {
             <span className="text-secondary">About</span> <br />
             Company
           </h3>
-          <div>
+          <div className="info phone ">
             <p>
               About Jaatvedas Construction Jaatvedas Group has a rich history in
               the field of construction industry in India. We are today, one of
@@ -72,7 +72,7 @@ const About = () => {
             <span className="text-secondary">About</span> <br />
             Founder
           </h3>
-          <div className="">
+          <div className="info email mb-3">
             <p>
               About Jaatvedas Construction Jaatvedas Group has a rich history in
               the field of construction industry in India. We are today, one of

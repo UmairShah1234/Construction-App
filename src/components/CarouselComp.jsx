@@ -1,4 +1,6 @@
 import React from "react";
+import pic1 from "../assets/carousel1.jpeg";
+import pic2 from "../assets/carousel2.jpeg";
 
 const CarouselComp = () => {
   return (
@@ -30,33 +32,21 @@ const CarouselComp = () => {
       </div>
       <div className="carousel-inner">
         <div className="carousel-item active">
-          <img
-            src="https://st2.depositphotos.com/1001335/9340/i/450/depositphotos_93401314-stock-photo-concept-of-construction-and-design.jpg"
-            alt=""
-            width={"100%"}
-          />
+          <img src={pic1} alt="" width={"100%"} height={650} />
           <div className="carousel-caption d-none d-md-block">
             <h5>Get The Best Gaming Experience</h5>
             <p></p>
           </div>
         </div>
         <div className="carousel-item">
-          <img
-            src="https://st2.depositphotos.com/1001335/9340/i/450/depositphotos_93401314-stock-photo-concept-of-construction-and-design.jpg"
-            alt=""
-            width={"100%"}
-          />
+          <img src={pic2} alt="" width={"100%"} height={650} />
           <div className="carousel-caption d-none d-md-block">
             <h5></h5>
             <p>Some representative placeholder content for the second slide.</p>
           </div>
         </div>
         <div className="carousel-item">
-          <img
-            src="https://st2.depositphotos.com/1001335/9340/i/450/depositphotos_93401314-stock-photo-concept-of-construction-and-design.jpg"
-            alt=""
-            width={"100%"}
-          />
+          <img src={pic1} alt="" width={"100%"} height={650} />
           <div className="carousel-caption d-none d-md-block">
             <h5>Third slide label</h5>
             <p>Some representative placeholder content for the third slide.</p>

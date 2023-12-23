@@ -25,6 +25,7 @@ const Home = () => {
               number={20}
               text={"million sq ft"}
               desc={"TOTAL CONSTRUCTED AREA TILL DATE"}
+              color={1}
             />
           </div>
 
@@ -33,6 +34,7 @@ const Home = () => {
               number={20}
               text={"million sq ft"}
               desc={"OF SAFE, ACCIDENT-FREE WORKING"}
+              color={2}
             />
           </div>
 
@@ -41,6 +43,7 @@ const Home = () => {
               number={20}
               text={"million sq ft"}
               desc={"BUILT SINCE INCEPTION"}
+              color={1}
             />
           </div>
 
@@ -49,11 +52,13 @@ const Home = () => {
               number={20}
               text={"million sq ft"}
               desc={"BUILT SINCE INCEPTION"}
+              color={2}
             />
           </div>
         </div>
 
         {/* project sections */}
+        <hr />
         <div className="mb-1">
           <div className="d-flex justify-content-between mb-3">
             <h3 className="">
@@ -80,37 +85,43 @@ const Home = () => {
         </div>
 
         {/* why choose us section */}
-        <div>
-          <h3 className="text-center">
+        <hr />
+        <div className="my-3">
+          <h3 className="text-center p-3">
             <span className="border-bottom border-danger">Why Choose Us?</span>
           </h3>
 
           <div className="row">
             <div className="col-md-4">
-              <ChooseCard />
+              <ChooseCard color />
             </div>
             <div className="col-md-4">
               <ChooseCard />
             </div>
             <div className="col-md-4">
-              <ChooseCard />
+              <ChooseCard color />
             </div>
             <div className="col-md-4">
               <ChooseCard />
             </div>
             <div className="col-md-4">
-              <ChooseCard />
+              <ChooseCard color />
             </div>
             <div className="col-md-4">
               <ChooseCard />
             </div>
           </div>
 
-          <div className="mt-3 mb-5">
+          <hr />
+          <div className="mt-3 p-3 mb-5">
             <h3></h3>
             <marquee>
               {clients.map((client) => (
-                 <img src={client.img} className="img-fluid me-4" alt="certificate"  />
+                <img
+                  src={client.img}
+                  className="img-fluid me-4"
+                  alt="certificate"
+                />
               ))}
             </marquee>
           </div>

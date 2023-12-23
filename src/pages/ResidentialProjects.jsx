@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import ProjectCard from "../components/ProjectCard";
-import {residential_project} from "../data/projects";
+import { residential_project } from "../data/projects";
 
 const ResidentialProjects = () => {
-  const [selectedCategory, setSelectedCategory] = useState('all');
+  const [selectedCategory, setSelectedCategory] = useState("all");
 
   const [selectedSubCategory, setSelectedSubCategory] =
     useState("new_construction");
 
   // const handleBtnClick = () => {
-   
+
   //   setSelectedCategory(!isSelected);
   // }
   const handleCategoryChange = (category) => {
@@ -21,11 +21,13 @@ const ResidentialProjects = () => {
 
   return (
     <>
-      <div className="container p-3">
+      <div className="container p-3  phone  my-3">
         <h3 className="">
-          <span className="border-bottom border-danger">Explore Our Residential Projects:</span>
+          <span className="border-bottom border-danger">
+            Explore Our Residential Projects:
+          </span>
         </h3>
-        <p className="p-1">
+        <p className="p-1 ">
           Welcome to our portfolio of completed projects, where creativity meets
           excellence. Each project represents a testament to our commitment to
           innovation, quality, and client satisfaction. Browse through our
@@ -41,13 +43,14 @@ const ResidentialProjects = () => {
       </div>
       <div className="container mb-1">
         <button
-         onClick={() => {
-          // handleBtnClick("all")
-          handleCategoryChange("all")
-        
-        }} 
-         
-         className={`btn btn-outline-danger rounded-2`}>All</button>
+          onClick={() => {
+            // handleBtnClick("all")
+            handleCategoryChange("all");
+          }}
+          className={`btn btn-outline-danger rounded-2`}
+        >
+          All
+        </button>
         <div className="btn-group mx-2">
           <button
             type="button"
@@ -56,7 +59,8 @@ const ResidentialProjects = () => {
             aria-expanded="false"
             onClick={() => {
               // handleBtnClick("ongoing")
-              handleCategoryChange("ongoing")}}
+              handleCategoryChange("ongoing");
+            }}
           >
             Ongoing
           </button>
@@ -80,7 +84,7 @@ const ResidentialProjects = () => {
           </ul>
         </div>
         <div className="btn-group mx-2">
-        {/* ${selectedCategory==="completed"? 'btn-danger ' : 'btn-outline-danger'} */}
+          {/* ${selectedCategory==="completed"? 'btn-danger ' : 'btn-outline-danger'} */}
           <button
             type="button"
             className={`btn btn-outline-danger  rounded-2 dropdown-toggle `}
@@ -88,7 +92,8 @@ const ResidentialProjects = () => {
             aria-expanded="false"
             onClick={() => {
               // handleBtnClick("completed")
-              handleCategoryChange("completed")}}
+              handleCategoryChange("completed");
+            }}
           >
             Completed
           </button>
@@ -112,93 +117,94 @@ const ResidentialProjects = () => {
           </ul>
         </div>
       </div>
-      {selectedCategory === "all" ?
-   
-      <div 
-      className="d-flex justify-content-center align-items-center row row-cols-sm-4 row-cols-1 ms-2"
-      >
-      {Object.keys(residential_project).map((cat) => (
-   
-        Object.keys(residential_project[cat]).map((subcat) => (
-      
-          residential_project[cat][subcat].map((project) => (
-           
-            <ProjectCard
-              key={project.project_id}
-              name={project.project_name}
-              location={project.location}
-              id={project.project_id}
-            />
-          ))
-        ))
-      ))}
-      </div>
-       : 
-      <>
-      {selectedCategory === "ongoing" ? (
-        <>
-          <div className=" d-flex justify-content-center align-items-center row row-cols-sm-4 row-cols-1 ms-2">
-            {selectedSubCategory === "new_construction" ? (
-              <>
-                {residential_project["ongoing"]["new_construction"].map((project) => (
-                  <>
-                    <ProjectCard
-                      key={project.project_id}
-                      name={project.project_name}
-                      location={project.location}
-                    />
-                  </>
-                ))}{" "}
-              </>
-            ) : (
-              <>
-                {residential_project["ongoing"]["restoration"].map((project) => (
-                  <>
-                    <ProjectCard
-                      key={project.project_id}
-                      name={project.project_name}
-                      location={project.location}
-                    />
-                  </>
-                ))}{" "}
-              </>
-            )}
-          </div>
-        </>
+      {selectedCategory === "all" ? (
+        <div className="d-flex justify-content-center align-items-center row row-cols-sm-4 row-cols-1 ms-2">
+          {Object.keys(residential_project).map((cat) =>
+            Object.keys(residential_project[cat]).map((subcat) =>
+              residential_project[cat][subcat].map((project) => (
+                <ProjectCard
+                  key={project.project_id}
+                  name={project.project_name}
+                  location={project.location}
+                  id={project.project_id}
+                />
+              ))
+            )
+          )}
+        </div>
       ) : (
         <>
-          <div className=" d-flex justify-content-center align-items-center row row-cols-sm-4 row-cols-1 ms-2">
-            {selectedSubCategory === "new_construction" ? (
-              <>
-                {residential_project["completed"]["new_construction"].map((project) => (
+          {selectedCategory === "ongoing" ? (
+            <>
+              <div className=" d-flex justify-content-center align-items-center row row-cols-sm-4 row-cols-1 ms-2">
+                {selectedSubCategory === "new_construction" ? (
                   <>
-                    <ProjectCard
-                      key={project.project_id}
-                      name={project.project_name}
-                      location={project.location}
-                    />
+                    {residential_project["ongoing"]["new_construction"].map(
+                      (project) => (
+                        <>
+                          <ProjectCard
+                            key={project.project_id}
+                            name={project.project_name}
+                            location={project.location}
+                          />
+                        </>
+                      )
+                    )}{" "}
                   </>
-                ))}{" "}
-              </>
-            ) : (
-              <>
-                {residential_project["completed"]["restoration"].map((project) => (
+                ) : (
                   <>
-                    <ProjectCard
-                      key={project.project_id}
-                      name={project.project_name}
-                      location={project.location}
-                    />
+                    {residential_project["ongoing"]["restoration"].map(
+                      (project) => (
+                        <>
+                          <ProjectCard
+                            key={project.project_id}
+                            name={project.project_name}
+                            location={project.location}
+                          />
+                        </>
+                      )
+                    )}{" "}
                   </>
-                ))}{" "}
-              </>
-            )}
-          </div>
+                )}
+              </div>
+            </>
+          ) : (
+            <>
+              <div className=" d-flex justify-content-center align-items-center row row-cols-sm-4 row-cols-1 ms-2">
+                {selectedSubCategory === "new_construction" ? (
+                  <>
+                    {residential_project["completed"]["new_construction"].map(
+                      (project) => (
+                        <>
+                          <ProjectCard
+                            key={project.project_id}
+                            name={project.project_name}
+                            location={project.location}
+                          />
+                        </>
+                      )
+                    )}{" "}
+                  </>
+                ) : (
+                  <>
+                    {residential_project["completed"]["restoration"].map(
+                      (project) => (
+                        <>
+                          <ProjectCard
+                            key={project.project_id}
+                            name={project.project_name}
+                            location={project.location}
+                          />
+                        </>
+                      )
+                    )}{" "}
+                  </>
+                )}
+              </div>
+            </>
+          )}
         </>
       )}
-      </>
-      }
-      
     </>
   );
 };
