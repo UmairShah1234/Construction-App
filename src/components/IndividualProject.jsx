@@ -8,266 +8,228 @@ import Typography from "@mui/material/Typography";
 import { Link, useParams } from "react-router-dom";
 import { commercial_projects, residential_project } from "../data/projects";
 import ProjectCard from "./ProjectCard";
-
+import { KeyboardArrowRight } from "@mui/icons-material";
 
 const IndividualProject = () => {
-
   const [scrollPosition, setScrollPosition] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-   
       setScrollPosition((prevPosition) => prevPosition + 1);
-    }, 100); 
+    }, 100);
 
     return () => clearInterval(interval);
   }, []);
-    const  {project_name} = useParams()
+  const { project_name } = useParams();
 
-    console.log(project_name)
-    const resProject = findResProjectByName(project_name)
-    const comProject = findComProjectByName(project_name)
-    // console.log(resProject);
-    function findResProjectByName(project_name) {
-     
-        for (const category in residential_project) {
-          for (const subCategory in residential_project[category]) {
-            for (const project of residential_project[category][subCategory]) {
-              if (project.project_name === project_name) {
-                 console.log(project)
-                return project;
-                
-              }
-            }
+  console.log(project_name);
+  const resProject = findResProjectByName(project_name);
+  const comProject = findComProjectByName(project_name);
+  // console.log(resProject);
+  function findResProjectByName(project_name) {
+    for (const category in residential_project) {
+      for (const subCategory in residential_project[category]) {
+        for (const project of residential_project[category][subCategory]) {
+          if (project.project_name === project_name) {
+            console.log(project);
+            return project;
           }
         }
-        return null; // Handle the case where the project is not found
-       
       }
-      function findComProjectByName(project_name) {
-       
-        for (const category in commercial_projects) {
-          for (const subCategory in commercial_projects[category]) {
-            for (const project of commercial_projects[category][subCategory]) {
-              if (project.project_name === project_name) {
-                console.log(project)
-                return project;
-                
-              }
-            }
+    }
+    return null; // Handle the case where the project is not found
+  }
+  function findComProjectByName(project_name) {
+    for (const category in commercial_projects) {
+      for (const subCategory in commercial_projects[category]) {
+        for (const project of commercial_projects[category][subCategory]) {
+          if (project.project_name === project_name) {
+            console.log(project);
+            return project;
           }
         }
-        return null; 
-       
       }
-     
-      // flex: "1 0 auto"
+    }
+    return null;
+  }
+
+  // flex: "1 0 auto"
   return (
     <div className="container p-1">
-        {resProject ?  
+      {resProject ? (
         <>
-        <Card className="indvidualProjCard mainCard" sx={{ display: 'grid',
-        gridTemplateColumns: '1fr 2fr',height: "85vh", padding: "15px", margin: "15px" }}>
-        <Box className="contentBox" sx={{    height:"30%", marginRight: "15px" }}>
-          <CardContent  sx={{  backgroundColor: "lightgrey",  }}>
-          <Box sx={{backgroundColor: "white", padding: "15px" }}>
-            <Typography component="div" variant="h5">
-              {resProject.project_name}
-            </Typography>
-            <Typography
-              variant="subtitle1"
-              color="text.secondary"
-              component="div"
-            >{resProject.location}
-            </Typography>
-            <Typography
-              variant="h4"
-              color="text.secondary"
-              component="div"
+          <Card
+            className="indvidualProjCard mainCard"
+            sx={{
+              display: "grid",
+              gridTemplateColumns: "1fr 2fr",
+              height: "85vh",
+              padding: "15px",
+              margin: "15px",
+            }}
+          >
+            <div
+              className="contentBox"
+              sx={{ height: "30%", marginRight: "15px" }}
             >
-              SQUARE FEET 
-             
-            </Typography>
-            <Typography
-              variant="subtitle1"
-              color="text.secondary"
-              component="div"
-            >
-            {resProject.square_ft}
-             
-            </Typography>
-            <Typography
-              variant="h4"
-              color="text.secondary"
-              component="div"
-            >
-              Architect
-             
-            </Typography>
-            <Typography
-              variant="subtitle1"
-              color="text.secondary"
-              component="div"
-            >
-            {resProject.architect}
-             
-            </Typography>
-            <Typography
-              variant="subtitle1"
-              color="text.secondary"
-              component="div"
-            >
-              <Link className="btn btn-outline-danger" to={`/projectImages/${project_name}`}>
-                More Images
-              </Link>
-          
-             
-            </Typography>
-            </Box>
-          </CardContent>
-          {/* <Box
+              <div className="mx-3 py-1">
+                <div className="email info">
+                  <h3>{resProject.project_name}</h3>
+                  <p className="text-decoration-underline">
+                    {resProject.location}
+                  </p>
+                  <h3>SQUARE FEET</h3>
+                  <p className="text-decoration-underline">
+                    {resProject.square_ft}
+                  </p>
+                  <h3>Architect</h3>
+                  <p className="text-decoration-underline">
+                    {resProject.architect}
+                  </p>
+                  <Typography
+                    variant="subtitle1"
+                    color="text.secondary"
+                    component="div"
+                  >
+                    <Link
+                      className="btn btn-outline-danger rounded-0"
+                      to={`/projectImages/${project_name}`}
+                    >
+                      More Images <KeyboardArrowRight />
+                    </Link>
+                  </Typography>
+                </div>
+              </div>
+              {/* <Box
             sx={{ display: "flex", alignItems: "center", pl: 1, pb: 1 }}
           ></Box> */}
-        </Box>
-        <CardMedia
-          component="img"
-          className="imgBox"
-          sx={{ height: "57%"}} 
-          image="/src/assets/tolu-olubode-PlBsJ5MybGc-unsplash.jpg"
-          alt="Live from space album cover"
-        />
-      </Card>
-     
- <div className="border-1" style={{width: "85vw", overflow:"hidden"}}>
-  <div className="d-flex float-start "
-  style={{ transform: `translateX(-${scrollPosition}px)`, transition: 'transform 0.5s ease' }} >
- {Object.keys(residential_project).map((cat) => (
-   
-   Object.keys(residential_project[cat]).map((subcat) => (
- 
-     residential_project[cat][subcat].map((project) => (
-      <>
-      {/* <div className="col"> */}
-       <ProjectCard
-         key={project.project_id}
-         name={project.project_name}
-         location={project.location}
-         id={project.project_id}
-       />
-        {/* </div> */}
+            </div>
+            <CardMedia
+              component="img"
+              className="imgBox"
+              sx={{ height: "57%" }}
+              image="/src/assets/tolu-olubode-PlBsJ5MybGc-unsplash.jpg"
+              alt="Live from space album cover"
+            />
+          </Card>
+
+          <div
+            className="border-1"
+            style={{ width: "85vw", overflow: "hidden" }}
+          >
+            <div
+              className="d-flex float-start "
+              style={{
+                transform: `translateX(-${scrollPosition}px)`,
+                transition: "transform 0.5s ease",
+              }}
+            >
+              {Object.keys(residential_project).map((cat) =>
+                Object.keys(residential_project[cat]).map((subcat) =>
+                  residential_project[cat][subcat].map((project) => (
+                    <>
+                      {/* <div className="col"> */}
+                      <ProjectCard
+                        key={project.project_id}
+                        name={project.project_name}
+                        location={project.location}
+                        id={project.project_id}
+                      />
+                      {/* </div> */}
+                    </>
+                  ))
+                )
+              )}
+            </div>
+          </div>
+
+          {/* </marquee> */}
         </>
-     ))
-   ))
- ))}
- 
-</div>
-</div>
-
-
- 
-{/* </marquee> */}
-      </>
-      
-      :
-      <>
-       <Card className="indvidualProjCard mainCard" sx={{ display: 'grid',
-       gridTemplateColumns: '1fr 2fr',height: "85vh", padding: "15px", margin: "15px" }}>
-       <Box className="contentBox" sx={{    height:"30%", marginRight: "15px" }}>
-         <CardContent  sx={{  backgroundColor: "lightgrey"  }}>
-         <Box sx={{backgroundColor: "white", padding: "15px" }}>
-           <Typography component="div" variant="h5">
-             {comProject.project_name}
-           </Typography>
-           <Typography
-             variant="subtitle1"
-             color="text.secondary"
-             component="div"
-           >{comProject.location}
-           </Typography>
-           <Typography
-              variant="h4"
-              color="text.secondary"
-              component="div"
-            >
-              SQUARE FEET 
-             
-            </Typography>
-            <Typography
-              variant="subtitle1"
-              color="text.secondary"
-              component="div"
-            >
-            {comProject.square_ft}
-             
-            </Typography>
-            <Typography
-              variant="h4"
-              color="text.secondary"
-              component="div"
-            >
-              Architect
-             
-            </Typography>
-            <Typography
-              variant="subtitle1"
-              color="text.secondary"
-              component="div"
-            >
-            {comProject.architect}
-             
-            </Typography>
-            <Typography
-              variant="subtitle1"
-              color="text.secondary"
-              component="div"
-            >
-              <Link className="btn btn-outline-danger" to={`/projectImages/${project_name}`}>
-                More Images
-              </Link>
-          
-             
-            </Typography>
-            </Box>
-         </CardContent>
-         {/* <Box
+      ) : (
+        <>
+          <Card
+            className="indvidualProjCard mainCard"
+            sx={{
+              display: "grid",
+              gridTemplateColumns: "1fr 2fr",
+              height: "85vh",
+              padding: "15px",
+              margin: "15px",
+            }}
+          >
+            <div>
+              <div className="mx-3 py-1">
+                <div className="email info">
+                  <h3>{comProject.project_name}</h3>
+                  <p className="text-decoration-underline">
+                    {comProject.location}
+                  </p>
+                  <h3>SQUARE FEET</h3>
+                  <p className="text-decoration-underline">
+                    {comProject.square_ft}
+                  </p>
+                  <h3>Architect</h3>
+                  <p className="text-decoration-underline">
+                    {comProject.architect}
+                  </p>
+                  <Typography
+                    variant="subtitle1"
+                    color="text.secondary"
+                    component="div"
+                  >
+                    <Link
+                      className="btn btn-outline-danger rounded-0"
+                      to={`/projectImages/${project_name}`}
+                    >
+                      More Images <KeyboardArrowRight />
+                    </Link>
+                  </Typography>
+                </div>
+              </div>
+              {/* <Box
            sx={{ display: "flex", alignItems: "center", pl: 1, pb: 1 }}
          ></Box> */}
-       </Box>
-       <CardMedia
-        component="img"
-        className="imgBox"
-        sx={{ height: "57%"}} 
-        image="/src/assets/tolu-olubode-PlBsJ5MybGc-unsplash.jpg"
-        alt="Live from space album cover"
-       />
-     </Card>
-    <div className="border-1" style={{width: "85vw", overflow:"hidden"}}>
-    <div className="d-flex float-start "
-    style={{ transform: `translateX(-${scrollPosition}px)`, transition: 'transform 0.5s ease' }} >
-   {Object.keys(commercial_projects).map((cat) => (
-     
-     Object.keys(commercial_projects[cat]).map((subcat) => (
-   
-      commercial_projects[cat][subcat].map((project) => (
-        <>
-        {/* <div className="col"> */}
-         <ProjectCard
-           key={project.project_id}
-           name={project.project_name}
-           location={project.location}
-           id={project.project_id}
-         />
-          {/* </div> */}
-          </>
-       ))
-     ))
-   ))}
-   
-  </div>
-  </div>
-  </>
-    }
-    
+            </div>
+            <CardMedia
+              component="img"
+              className="imgBox"
+              sx={{ height: "57%" }}
+              image="/src/assets/tolu-olubode-PlBsJ5MybGc-unsplash.jpg"
+              alt="Live from space album cover"
+            />
+          </Card>
+          <div
+            className="border-1"
+            style={{ width: "85vw", overflow: "hidden" }}
+          >
+            <h3 className="text-decoration-underline">More Of Our Projects</h3>
+            <div
+              className="d-flex float-start "
+              style={{
+                transform: `translateX(-${scrollPosition}px)`,
+                transition: "transform 0.5s ease",
+              }}
+            >
+              {Object.keys(commercial_projects).map((cat) =>
+                Object.keys(commercial_projects[cat]).map((subcat) =>
+                  commercial_projects[cat][subcat].map((project) => (
+                    <>
+                      {/* <div className="col"> */}
+                      <ProjectCard
+                        key={project.project_id}
+                        name={project.project_name}
+                        location={project.location}
+                        id={project.project_id}
+                      />
+                      {/* </div> */}
+                    </>
+                  ))
+                )
+              )}
+            </div>
+          </div>
+        </>
+      )}
     </div>
   );
 };

@@ -15,7 +15,7 @@ const CommercialProjects = () => {
 
   return (
     <>
-      <div className="container p-3">
+      <div className="container p-3 phone  my-3">
         <h3 className="">
           <span className="border-bottom border-danger">Explore Our Commercial Projects:</span>
         </h3>
