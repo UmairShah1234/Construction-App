@@ -5,7 +5,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 
 import Typography from "@mui/material/Typography";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { commercial_projects, residential_project } from "../data/projects";
 import ProjectCard from "./ProjectCard";
 
@@ -24,7 +24,7 @@ const IndividualProject = () => {
   }, []);
     const  {project_name} = useParams()
 
-    // console.log(project_name)
+    console.log(project_name)
     const resProject = findResProjectByName(project_name)
     const comProject = findComProjectByName(project_name)
     // console.log(resProject);
@@ -34,7 +34,7 @@ const IndividualProject = () => {
           for (const subCategory in residential_project[category]) {
             for (const project of residential_project[category][subCategory]) {
               if (project.project_name === project_name) {
-                console.log(project)
+                 console.log(project)
                 return project;
                 
               }
@@ -110,6 +110,17 @@ const IndividualProject = () => {
               component="div"
             >
             {resProject.architect}
+             
+            </Typography>
+            <Typography
+              variant="subtitle1"
+              color="text.secondary"
+              component="div"
+            >
+              <Link className="btn btn-outline-danger" to={`/projectImages/${project_name}`}>
+                More Images
+              </Link>
+          
              
             </Typography>
             </Box>
@@ -203,6 +214,17 @@ const IndividualProject = () => {
               component="div"
             >
             {comProject.architect}
+             
+            </Typography>
+            <Typography
+              variant="subtitle1"
+              color="text.secondary"
+              component="div"
+            >
+              <Link className="btn btn-outline-danger" to={`/projectImages/${project_name}`}>
+                More Images
+              </Link>
+          
              
             </Typography>
             </Box>

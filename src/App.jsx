@@ -12,6 +12,7 @@ import ContactUs from "./pages/ContactUs";
 import About from "./pages/About";
 import Clients from "./pages/Clients";
 import Certificates from "./pages/Certificates";
+import ProjectImages from "./components/ProjectImages";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: '/:project_name',
         element: <IndividualProject />,
+      },
+      {
+        path: '/projectImages/:project_name',
+        element: <ProjectImages />,
       },
       {
         path: '/clients',

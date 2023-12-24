@@ -14,7 +14,7 @@ export const residential_project =  {
         },
         {
           "project_id": "2",
-          "project_name": "RAJ BABBAR BUNGLOW",
+          "project_name": "RAJ BABBAR (M.P.)",
           "location": "JVPD ROAD MUMBAI.",
           "square_ft": "8.50 Lakh Sqft.",  //unkown
           "architect": "ARCHITECT MR.ROHIT SHAH RCC CONSULTANT VORA ASSOCIATE",
@@ -108,12 +108,21 @@ export const residential_project =  {
           "start_date": "2020-02-15",
           "end_date": "2021-05-30"
         },
+        {
+          "project_id": "1",
+          "project_name": "DOWOODI BOHRA TRUST MASJID",
+          "location": "MAHESHWAR, NEAR INDOR, MP.",
+          "square_ft": "16554 SQ.FT", 
+          "architect": "ARCHITECT I.M. ASSOCIATE R.C.C. J.J. KIKANI",
+          "start_date": "2020-02-15",
+          "end_date": "2021-05-30"
+        },
         
       ],
       "restoration": [
         {
           "project_id": "5",
-          "project_name": "DARGAH-E-HAKIMI ",
+          "project_name": "DARGAH E HAKIMI",
           "location": "JOHAR BLOCK, MAWAID AT. BURHANPUR, M.P.",
           "square_ft": "1,80,00,000.00 SQ.FT", //unknow
           "architect": "MR. C.G.PATEL",
@@ -122,7 +131,7 @@ export const residential_project =  {
         },
         {
           "project_id": "6",
-          "project_name": "SHRI RAJ BABBAR (M.P.)",
+          "project_name": "RAJ BABBAR (M.P.)",
           "location": "J.V.P.D. SCHEAM, JUHU, MUMBAI.400049",
           "square_ft": "9,000SQ.FT", //unknow
           "architect": "MR. A.Z. VASI MR. ROHIT SHAH",
@@ -175,7 +184,7 @@ export const residential_project =  {
           "location": "City B",
           "start_date": "2023-03-10",
           "end_date": "2024-06-30"
-        }
+        },
       ],
       "restoration": [
         {
@@ -243,13 +252,22 @@ export const residential_project =  {
           "start_date": "2020-02-15",
           "end_date": "2021-05-30"
         },
+        {
+          "project_id": "13",
+          "project_name": "COOPKING ENAMIL WAIRE MFG.CO",
+          "location": "PLOT NO.100, 101AT PANCHAL UDYOG NAGAR, NANI DAMAN, DAMAN. ",
+          "square_ft": "40,000.00SQFT ", 
+          "architect": "M/S.A.Z. VASI & CO",
+          "start_date": "2020-02-15",
+          "end_date": "2021-05-30"
+        },
        
     
       ],
       "restoration": [
         {
           "project_id": "5",
-          "project_name": "TEX CENTRE PERMISES C.S.LTD. ",
+          "project_name": "TAX CENTRE PERMISES C.S.LTD.",
           "location": "CHANDIVALI, SAKINAKA, MUMBAI- 400 072.",
           "square_ft": "1,80,00,000.00 SQ.FT", //unknow
           "architect": "MR. SHATISH AGARWAL",
