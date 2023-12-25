@@ -108,7 +108,7 @@ const IndividualProject = () => {
               component="img"
               className="imgBox"
               sx={{ height: "57%" }}
-              image="/src/assets/tolu-olubode-PlBsJ5MybGc-unsplash.jpg"
+              image={resProject.img}
               alt="Live from space album cover"
             />
           </Card>
@@ -194,7 +194,7 @@ const IndividualProject = () => {
               component="img"
               className="imgBox"
               sx={{ height: "57%" }}
-              image="/src/assets/tolu-olubode-PlBsJ5MybGc-unsplash.jpg"
+              image={comProject.img}
               alt="Live from space album cover"
             />
           </Card>

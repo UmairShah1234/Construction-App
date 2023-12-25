@@ -7,7 +7,8 @@ export const residential_project =  {
           "project_id": "1",
           "project_name": "Gopal Sons",
           "location": "Gopal Nagri Umbroli Dombivli East.",
-          "square_ft": "8.50 Lakh Sqft.", 
+          "img": "/src/assets/SITES PHOTO/On Going Dombivali site/WhatsApp Image 2023-08-07 at 4.20.52 PM.jpeg",
+                    "square_ft": "8.50 Lakh Sqft.", 
           "architect": "ARCHITECT MR.VINAYAK SAHASRABUDHE",
           "start_date": "2023-01-15",
           "end_date": "2023-12-31"
@@ -16,49 +17,28 @@ export const residential_project =  {
           "project_id": "2",
           "project_name": "RAJ BABBAR (M.P.)",
           "location": "JVPD ROAD MUMBAI.",
+          "img": "/src/assets/SITES PHOTO/RAJ BABBAR HOUSE/5dd21c83-d01d-4a4d-8eff-772421ee19cc.JPG",
+          "square_ft": "8.50 Lakh Sqft.",  //unkown
+          "architect": "ARCHITECT MR.ROHIT SHAH RCC CONSULTANT VORA ASSOCIATE",
+          "start_date": "2023-01-15",
+          "end_date": "2023-12-31"
+        },
+        {
+          "project_id": "3",
+          "project_name": "NEEL MOHAR BUNGLOW.",
+          "location": "PINGLAS,KARJAT..",
+          "img": "/src/assets/SITES PHOTO/KARJAT/IMG-2081.jpg",
           "square_ft": "8.50 Lakh Sqft.",  //unkown
           "architect": "ARCHITECT MR.ROHIT SHAH RCC CONSULTANT VORA ASSOCIATE",
           "start_date": "2023-01-15",
           "end_date": "2023-12-31"
         },
         
-        {
-          "project_id": "3",
-          "project_name": "Res Complex",
-          "location": "City B",
-          "start_date": "2023-03-10",
-          "end_date": "2024-06-30"
-        },
-        {
-          "project_id": "4",
-          "project_name": "Res Bungalow",
-          "location": "City B",
-          "start_date": "2023-03-10",
-          "end_date": "2024-06-30"
-        }
+        
       ],
       "restoration": [
-        {
-          "project_id": "5",
-          "project_name": "Res Historic Theater Renovation",
-          "location": "City C",
-          "start_date": "2022-07-20",
-          "end_date": "2023-09-15"
-        },
-        {
-          "project_id": "6",
-          "project_name": "Res School Renovate",
-          "location": "City C",
-          "start_date": "2022-07-20",
-          "end_date": "2023-09-15"
-        },
-        {
-          "project_id": "7",
-          "project_name": "Res Buliding Renovate",
-          "location": "City C",
-          "start_date": "2022-07-20",
-          "end_date": "2023-09-15"
-        },
+        
+       
       ]
     },
     "completed": {
@@ -76,6 +56,7 @@ export const residential_project =  {
           "project_id": "9",
           "project_name": "H.A.HOUSE BUNGLOW",
           "location": "FATEHPUR SHEKHAWATI, DIST. SIKAR, RAJASTHAN",
+          "img": "/src/assets/SITES PHOTO/ha house.jpg",
           "square_ft": "1,80,00,000.00 SQ.FT", //unknown
           "architect": "MR.VINAYAK SAHASRABUDHE",
           "start_date": "2020-02-15",
@@ -108,23 +89,17 @@ export const residential_project =  {
           "start_date": "2020-02-15",
           "end_date": "2021-05-30"
         },
-        {
-          "project_id": "1",
-          "project_name": "DOWOODI BOHRA TRUST MASJID",
-          "location": "MAHESHWAR, NEAR INDOR, MP.",
-          "square_ft": "16554 SQ.FT", 
-          "architect": "ARCHITECT I.M. ASSOCIATE R.C.C. J.J. KIKANI",
-          "start_date": "2020-02-15",
-          "end_date": "2021-05-30"
-        },
+       
+      
         
       ],
       "restoration": [
         {
-          "project_id": "5",
+          "project_id": "4",
           "project_name": "DARGAH E HAKIMI",
           "location": "JOHAR BLOCK, MAWAID AT. BURHANPUR, M.P.",
           "square_ft": "1,80,00,000.00 SQ.FT", //unknow
+          "img": "/src/assets/SITES PHOTO/Dargha E Hakimi (Bhuranpur M.P)/IMG_20231103_0013.jpg",
           "architect": "MR. C.G.PATEL",
           "start_date": "2019-10-10",
           "end_date": "2020-12-20"
@@ -133,16 +108,18 @@ export const residential_project =  {
           "project_id": "6",
           "project_name": "RAJ BABBAR (M.P.)",
           "location": "J.V.P.D. SCHEAM, JUHU, MUMBAI.400049",
-          "square_ft": "9,000SQ.FT", //unknow
+          "square_ft": "9,000SQ.FT",
+          "img": "/src/assets/SITES PHOTO/RAJ BABBAR HOUSE/5dd21c83-d01d-4a4d-8eff-772421ee19cc.JPG", //unknow
           "architect": "MR. A.Z. VASI MR. ROHIT SHAH",
           "start_date": "2018-04-05",
           "end_date": "2019-06-15"
         },
         {
-          "project_id": "7",
+          "project_id": "5",
           "project_name": "SUNIL GEHI.",
           "location": "Bungalow No-02, Girikandra Society, Lonavala, Maha.",
           "square_ft": "9,000SQ.FT", //unknow
+          "img": "/src/assets/SITES PHOTO/sunil gehil.jpg",
           "architect": "Architect. Mr.Parag Shah",
           "start_date": "2018-04-05",
           "end_date": "2019-06-15"
@@ -155,36 +132,8 @@ export const residential_project =  {
   export const commercial_projects =  {
     "ongoing": {
       "new_construction": [
-        {
-          "project_id": "1",
-          "project_name": "commercil Complex",
-          "location": "YAVATMAL, MAHARASHTRA",
-          "square_ft": "2 LACS SQ.FT",
-          "architect": "MR.VINAYAK SAHASRABUDHE",
-          "start_date": "2023-01-15",
-          "end_date": "2023-12-31"
-        },
-        {
-          "project_id": "2",
-          "project_name": "commercial Complex",
-          "location": "City B",
-          "start_date": "2023-03-10",
-          "end_date": "2024-06-30"
-        },
-        {
-          "project_id": "3",
-          "project_name": "Com Complex",
-          "location": "City B",
-          "start_date": "2023-03-10",
-          "end_date": "2024-06-30"
-        },
-        {
-          "project_id": "4",
-          "project_name": "Com Bungalow",
-          "location": "City B",
-          "start_date": "2023-03-10",
-          "end_date": "2024-06-30"
-        },
+       
+        
       ],
       "restoration": [
         {
@@ -205,13 +154,7 @@ export const residential_project =  {
           "start_date": "2023-03-10",
           "end_date": "2024-06-30"
         },
-        {
-          "project_id": "7",
-          "project_name": "Com Buliding Renovate",
-          "location": "City C",
-          "start_date": "2022-07-20",
-          "end_date": "2023-09-15"
-        },
+       
       ]
     },
     "completed": {
@@ -221,12 +164,33 @@ export const residential_project =  {
           "project_name": "ST.ALOYSIUS CONVENT SCHOOL (  DIVINE CHILD HIGH SCHOOL)",
           "location": "YAVATMAL, MAHARASHTRA",
           "square_ft": "2 LACS SQ.FT",
+          "img": "/src/assets/SITES PHOTO/st_alon.jpg",
           "architect": "MR.VINAYAK SAHASRABUDHE",
           "start_date": "2020-02-15",
           "end_date": "2021-05-30"
         },
         {
           "project_id": "9",
+          "project_name": "PRABHAT INDUSTRIES",
+          "location": "L.B.S. MARG, OPP CIPLA, VIKROLI (W)., Mumbai, Maharashtra",
+          "square_ft": "58,000SQ.FT", 
+          "img": "/src/assets/SITES PHOTO/prabhat industries.jpg",
+          "architect": "MR.VINAYAK SAHASRABUDH ",
+          "start_date": "2020-02-15",
+          "end_date": "2021-05-30"
+        },
+        {
+          "project_id": "10",
+          "project_name": "PRABHAT ELASTOMERS PVT. LTD.",
+          "location": "G.I.D.C. SARIGAM, UMERGAM, DISTRICT- VALSAD.",
+          "img": "/src/assets/SITES PHOTO/prabhat elatomer.png",
+          "square_ft": "78,000SQ.FT",
+          "architect": "MR. KIRIT BHATT",
+          "start_date": "2020-02-15",
+          "end_date": "2021-05-30"
+        },
+        {
+          "project_id": "15",
           "project_name": "SHIVAM FABRICS PVT LTD",
           "location": "WALIV PHATTA,VASAI ( E ), THANE",
           "square_ft": "40,000SQ.FT",
@@ -235,16 +199,7 @@ export const residential_project =  {
           "end_date": "2021-05-30"
         },
         {
-          "project_id": "10",
-          "project_name": "PRABHAT ELASTOMERS PVT. LTD.",
-          "location": "G.I.D.C. SARIGAM, UMERGAM, DISTRICT- VALSAD.          ",
-          "square_ft": "78,000SQ.FT",
-          "architect": "MR. KIRIT BHATT",
-          "start_date": "2020-02-15",
-          "end_date": "2021-05-30"
-        },
-        {
-          "project_id": "11",
+          "project_id": "12",
           "project_name": "ASMITA SCHOOL",
           "location": "WESTERN EXPRESS HIHGWAY JOGESHWARI (E),MUMBAI-400060.",
           "square_ft": "32,200SQ.FT", 
@@ -262,6 +217,7 @@ export const residential_project =  {
           "end_date": "2021-05-30"
         },
        
+       
     
       ],
       "restoration": [
@@ -269,15 +225,17 @@ export const residential_project =  {
           "project_id": "5",
           "project_name": "TAX CENTRE PERMISES C.S.LTD.",
           "location": "CHANDIVALI, SAKINAKA, MUMBAI- 400 072.",
+          "img": "/src/assets/SITES PHOTO/TAX CENTER CHANDIVALI/IMG_20231103_0064.jpg",
           "square_ft": "1,80,00,000.00 SQ.FT", //unknow
           "architect": "MR. SHATISH AGARWAL",
           "start_date": "2019-10-10",
           "end_date": "2020-12-20"
         },
         {
-          "project_id": "6",
+          "project_id": "11",
           "project_name": "DIVINE CHILDHIGH SCHOOL",
           "location": "CHAKALA, ANDHERI (E)",
+          "img": "/src/assets/SITES PHOTO/divinechild.jpg", 
           "square_ft": "1,80,00,000.00 SQ.FT", //unknow
           "architect": "MR.VINAYAK SAHASRABUDHE",
           "start_date": "2018-04-05",

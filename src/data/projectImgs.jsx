@@ -268,5 +268,20 @@ export const project_images = {
         {
             "img": "/src/assets/SITES PHOTO/TAX CENTER CHANDIVALI/IMG_20231103_0082.jpg"
         },
+    ],
+    "NEEL MOHAR BUNGLOW.": [
+        {
+            "img": "/src/assets/SITES PHOTO/KARJAT/IMG-2072.jpg"
+        },
+        {
+            "img": "/src/assets/SITES PHOTO/KARJAT/IMG-2081.jpg"
+        },
+        {
+            "img": "/src/assets/SITES PHOTO/KARJAT/IMG-2082.jpg"
+        },
+        {
+            "img": "/src/assets/SITES PHOTO/KARJAT/IMG-2084.jpg"
+        },
+        
     ]
 }

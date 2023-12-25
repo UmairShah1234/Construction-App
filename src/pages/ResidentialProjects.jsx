@@ -123,6 +123,7 @@ const ResidentialProjects = () => {
             Object.keys(residential_project[cat]).map((subcat) =>
               residential_project[cat][subcat].map((project) => (
                 <ProjectCard
+                img={project.img}
                   key={project.project_id}
                   name={project.project_name}
                   location={project.location}
@@ -143,6 +144,7 @@ const ResidentialProjects = () => {
                       (project) => (
                         <>
                           <ProjectCard
+                           img={project.img}
                             key={project.project_id}
                             name={project.project_name}
                             location={project.location}
@@ -157,6 +159,7 @@ const ResidentialProjects = () => {
                       (project) => (
                         <>
                           <ProjectCard
+                           img={project.img}
                             key={project.project_id}
                             name={project.project_name}
                             location={project.location}
@@ -177,6 +180,7 @@ const ResidentialProjects = () => {
                       (project) => (
                         <>
                           <ProjectCard
+                           img={project.img}
                             key={project.project_id}
                             name={project.project_name}
                             location={project.location}
@@ -191,6 +195,7 @@ const ResidentialProjects = () => {
                       (project) => (
                         <>
                           <ProjectCard
+                           img={project.img}
                             key={project.project_id}
                             name={project.project_name}
                             location={project.location}

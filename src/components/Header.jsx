@@ -9,10 +9,10 @@ const Header = () => {
         </Link>
 
         <div
-          className="collapse navbar-collapse"
+          className="collapse navbar-collapse justify-content-end "
           id="navbarSupportedContent"
         >
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul className="navbar-nav  mb-2 mb-lg-0">
             <li className="nav-item mx-3">
               <Link className="nav-link" aria-current="page" to="/">
                 Home

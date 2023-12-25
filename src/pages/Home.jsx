@@ -6,12 +6,13 @@ import Title from "../components/Title";
 import ProjectCard from "../components/ProjectCard";
 import CarouselComp from "../components/CarouselComp";
 import { clients } from "../data/clients";
+import { commercial_projects, residential_project } from "../data/projects";
 
 const Home = () => {
   return (
     <div>
       {/* carousel component */}
-      <div className="my-3">
+      <div className="">
         <CarouselComp />
       </div>
       <div className="container">
@@ -73,14 +74,40 @@ const Home = () => {
           </div>
 
           <div className="row mb-1 bg-secondary">
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
+          {Object.keys(residential_project).map((cat) => (
+   
+   Object.keys(residential_project[cat]).map((subcat) => (
+ 
+       residential_project[cat][subcat].filter((project) => 1 <= project.project_id && project.project_id < 5) 
+       .map((project) => (
+         <ProjectCard
+         
+           img={project.img}
+           key={project.project_id}
+           name={project.project_name}
+           location={project.location}
+           id={project.project_id}
+         />
+     ))
+   ))
+ ))}
+          {Object.keys(commercial_projects).map((cat) => (
+   
+   Object.keys(commercial_projects[cat]).map((subcat) => (
+ 
+       commercial_projects[cat][subcat].filter((project) => 8 <= project.project_id && project.project_id < 12) 
+       .map((project) => (
+         <ProjectCard
+         
+           img={project.img}
+           key={project.project_id}
+           name={project.project_name}
+           location={project.location}
+           id={project.project_id}
+         />
+     ))
+   ))
+ ))}
           </div>
         </div>
 
@@ -116,8 +143,9 @@ const Home = () => {
           <div className="mt-3 p-3 mb-5">
             <h3></h3>
             <marquee>
-              {clients.map((client) => (
+              {clients.map((client,i) => (
                 <img
+                key={i}
                   src={client.img}
                   className="img-fluid me-4"
                   alt="certificate"

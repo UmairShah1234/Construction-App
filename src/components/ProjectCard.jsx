@@ -2,7 +2,7 @@ import React from "react";
 import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
 import { Link } from "react-router-dom";
 import "./ProjectCard.css"
-const ProjectCard = ({ id,name, location }) => {
+const ProjectCard = ({ id,img,name, location }) => {
   return (
     // <div className="row">
     //   <div className="col">
@@ -10,7 +10,7 @@ const ProjectCard = ({ id,name, location }) => {
           className="card position-relative bg-light shadow-lg p-1 mx-1 my-1"
           style={{ width: "20rem" }}
         >
-          <img src="/src/assets/tolu-olubode-PlBsJ5MybGc-unsplash.jpg" height="100%" alt="" />
+          <img src={img} height="100%" alt="" />
           
           <div className="card-body position-absolute trans_card d-flex flex-column justify-content-center align-items-center  text-dark">
             <div className="card-title text-center">

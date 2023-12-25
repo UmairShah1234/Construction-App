@@ -32,21 +32,21 @@ const CarouselComp = () => {
       </div>
       <div className="carousel-inner">
         <div className="carousel-item active">
-          <img src={pic1} alt="" width={"100%"} height={650} />
+          <img src="/src/assets/SITES PHOTO/On Going Dombivali site/WhatsApp Image 2023-08-07 at 4.20.53 PM.jpeg" alt="" width={"100%"} height={650} />
           <div className="carousel-caption d-none d-md-block">
             <h5>Get The Best Gaming Experience</h5>
             <p></p>
           </div>
         </div>
         <div className="carousel-item">
-          <img src={pic2} alt="" width={"100%"} height={650} />
+          <img src="/src/assets/SITES PHOTO/ha house.jpg" alt="" width={"100%"} height={650} />
           <div className="carousel-caption d-none d-md-block">
             <h5></h5>
             <p>Some representative placeholder content for the second slide.</p>
           </div>
         </div>
         <div className="carousel-item">
-          <img src={pic1} alt="" width={"100%"} height={650} />
+          <img src="/src/assets/SITES PHOTO/RAJ BABBAR HOUSE/5dd21c83-d01d-4a4d-8eff-772421ee19cc.JPG"  alt="" width={"100%"} height={650} />
           <div className="carousel-caption d-none d-md-block">
             <h5>Third slide label</h5>
             <p>Some representative placeholder content for the third slide.</p>

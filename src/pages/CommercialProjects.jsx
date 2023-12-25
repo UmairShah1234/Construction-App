@@ -104,9 +104,11 @@ const CommercialProjects = () => {
             commercial_projects[cat][subcat].map((project) => (
            
             <ProjectCard
+            img={project.img}
               key={project.project_id}
               name={project.project_name}
               location={project.location}
+              id={project.project_id}
             />
           ))
         ))
@@ -122,6 +124,7 @@ const CommercialProjects = () => {
                 {commercial_projects["ongoing"]["new_construction"].map((project) => (
                   <>
                     <ProjectCard
+                     img={project.img}
                       key={project.project_id}
                       name={project.project_name}
                       location={project.location}
@@ -134,6 +137,7 @@ const CommercialProjects = () => {
                 {commercial_projects["ongoing"]["restoration"].map((project) => (
                   <>
                     <ProjectCard
+                     img={project.img}
                       key={project.project_id}
                       name={project.project_name}
                       location={project.location}
@@ -152,6 +156,7 @@ const CommercialProjects = () => {
                 {commercial_projects["completed"]["new_construction"].map((project) => (
                   <>
                     <ProjectCard
+                     img={project.img}
                       key={project.project_id}
                       name={project.project_name}
                       location={project.location}
@@ -164,6 +169,7 @@ const CommercialProjects = () => {
                 {commercial_projects["completed"]["restoration"].map((project) => (
                   <>
                     <ProjectCard
+                     img={project.img}
                       key={project.project_id}
                       name={project.project_name}
                       location={project.location}
