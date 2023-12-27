@@ -22,7 +22,7 @@ const IndividualProject = () => {
   }, []);
   const { project_name } = useParams();
 
-  console.log(project_name);
+  //console.log(project_name);
   const resProject = findResProjectByName(project_name);
   const comProject = findComProjectByName(project_name);
   // console.log(resProject);
@@ -31,7 +31,7 @@ const IndividualProject = () => {
       for (const subCategory in residential_project[category]) {
         for (const project of residential_project[category][subCategory]) {
           if (project.project_name === project_name) {
-            console.log(project);
+           // console.log(project);
             return project;
           }
         }
@@ -44,7 +44,7 @@ const IndividualProject = () => {
       for (const subCategory in commercial_projects[category]) {
         for (const project of commercial_projects[category][subCategory]) {
           if (project.project_name === project_name) {
-            console.log(project);
+          //  console.log(project);
             return project;
           }
         }
@@ -107,9 +107,9 @@ const IndividualProject = () => {
             <CardMedia
               component="img"
               className="imgBox"
-              sx={{ height: "57%" }}
+              sx={{ height: "100%" }}
               image={resProject.img}
-              alt="Live from space album cover"
+              alt="project"
             />
           </Card>
 
@@ -134,6 +134,7 @@ const IndividualProject = () => {
                         name={project.project_name}
                         location={project.location}
                         id={project.project_id}
+                        img={project.img}
                       />
                       {/* </div> */}
                     </>
@@ -192,10 +193,10 @@ const IndividualProject = () => {
             </div>
             <CardMedia
               component="img"
-              className="imgBox"
-              sx={{ height: "57%" }}
+              className="imgBox "
+              sx={{ height: "100%" }}
               image={comProject.img}
-              alt="Live from space album cover"
+              alt="project"
             />
           </Card>
           <div
@@ -220,6 +221,7 @@ const IndividualProject = () => {
                         name={project.project_name}
                         location={project.location}
                         id={project.project_id}
+                        img={project.img}
                       />
                       {/* </div> */}
                     </>

@@ -5,7 +5,7 @@ export const residential_project =  {
       "new_construction": [
         {
           "project_id": "1",
-          "project_name": "Gopal Sons",
+          "project_name": "Gopal Sons", //projImgs done
           "location": "Gopal Nagri Umbroli Dombivli East.",
           "img": "/src/assets/SITES PHOTO/On Going Dombivali site/WhatsApp Image 2023-08-07 at 4.20.52 PM.jpeg",
                     "square_ft": "8.50 Lakh Sqft.", 
@@ -14,8 +14,8 @@ export const residential_project =  {
           "end_date": "2023-12-31"
         },
         {
-          "project_id": "2",
-          "project_name": "RAJ BABBAR (M.P.)",
+          "project_id": "2", //projImgs done
+          "project_name": "RAJ BABBAR (M.P.)", 
           "location": "JVPD ROAD MUMBAI.",
           "img": "/src/assets/SITES PHOTO/RAJ BABBAR HOUSE/5dd21c83-d01d-4a4d-8eff-772421ee19cc.JPG",
           "square_ft": "8.50 Lakh Sqft.",  //unkown
@@ -25,7 +25,7 @@ export const residential_project =  {
         },
         {
           "project_id": "3",
-          "project_name": "NEEL MOHAR BUNGLOW.",
+          "project_name": "NEEL MOHAR BUNGLOW.", //projImgs done
           "location": "PINGLAS,KARJAT..",
           "img": "/src/assets/SITES PHOTO/KARJAT/IMG-2081.jpg",
           "square_ft": "8.50 Lakh Sqft.",  //unkown
@@ -45,8 +45,9 @@ export const residential_project =  {
       "new_construction": [
         {
           "project_id": "8",
-          "project_name": "BOHRA TRUST MASJID COMPLEX",
+          "project_name": "BOHRA TRUST MASJID COMPLEX", //projImgs done
           "location": "Alot, Vikramgarh, Ratlam,(M.P.)",
+          "img":"/src/assets/SITES PHOTO/Bohramasjid.jpg",
           "square_ft": "1,80,00,000.00 SQ.FT", //unknow
           "architect": "M/s. Aesthetic Designs J.A.CHAHWALA",
           "start_date": "2020-02-15",
@@ -54,7 +55,7 @@ export const residential_project =  {
         },
         {
           "project_id": "9",
-          "project_name": "H.A.HOUSE BUNGLOW",
+          "project_name": "H.A.HOUSE BUNGLOW", //projImgs done
           "location": "FATEHPUR SHEKHAWATI, DIST. SIKAR, RAJASTHAN",
           "img": "/src/assets/SITES PHOTO/ha house.jpg",
           "square_ft": "1,80,00,000.00 SQ.FT", //unknown
@@ -73,9 +74,10 @@ export const residential_project =  {
         },
         {
           "project_id": "11",
-          "project_name": "MUTHA CONSTRUCTION",
+          "project_name": "MUTHA CONSTRUCTION", //projImgs done
           "location": "SAHAD, TALUKA KALYAN.",
-          "square_ft": "2.25 Lakh Sqft.",  
+          "square_ft": "2.25 Lakh Sqft.", 
+          "img":"/src/assets/SITES PHOTO/mutha1.jpg", 
           "architect": "ARCH. SHOBHANA DESHPANDE",
           "start_date": "2020-02-15",
           "end_date": "2021-05-30"
@@ -95,7 +97,7 @@ export const residential_project =  {
       ],
       "restoration": [
         {
-          "project_id": "4",
+          "project_id": "4", //projimgs done
           "project_name": "DARGAH E HAKIMI",
           "location": "JOHAR BLOCK, MAWAID AT. BURHANPUR, M.P.",
           "square_ft": "1,80,00,000.00 SQ.FT", //unknow
@@ -106,7 +108,7 @@ export const residential_project =  {
         },
         {
           "project_id": "6",
-          "project_name": "RAJ BABBAR (M.P.)",
+          "project_name": "RAJ BABBAR (M.P.)", //projimgs done
           "location": "J.V.P.D. SCHEAM, JUHU, MUMBAI.400049",
           "square_ft": "9,000SQ.FT",
           "img": "/src/assets/SITES PHOTO/RAJ BABBAR HOUSE/5dd21c83-d01d-4a4d-8eff-772421ee19cc.JPG", //unknow
@@ -116,7 +118,7 @@ export const residential_project =  {
         },
         {
           "project_id": "5",
-          "project_name": "SUNIL GEHI.",
+          "project_name": "SUNIL GEHI.", //projimgs done
           "location": "Bungalow No-02, Girikandra Society, Lonavala, Maha.",
           "square_ft": "9,000SQ.FT", //unknow
           "img": "/src/assets/SITES PHOTO/sunil gehil.jpg",
@@ -138,9 +140,10 @@ export const residential_project =  {
       "restoration": [
         {
           "project_id": "5",
-          "project_name": "SILVER POINT PRESS PVT. LTD.",
+          "project_name": "SILVER POINT PRESS PVT. LTD.",//projimgs done
           "location": "A, 403, TTC INDUSTRIAL AREA MIDC, MAHAPE,NAVI MUMBAI 400709.",
           "square_ft": "8.50 Lakh Sqft.", //unknown
+          "img":"/src/assets/SITES PHOTO/silver.jpg",
           "architect": "Mr. JEEVAN JADHAV RCC CONSULTANT",
           "start_date": "2022-07-20",
           "end_date": "2023-09-15"
@@ -161,7 +164,7 @@ export const residential_project =  {
       "new_construction": [
         {
           "project_id": "8",
-          "project_name": "ST.ALOYSIUS CONVENT SCHOOL (  DIVINE CHILD HIGH SCHOOL)",
+          "project_name": "ST.ALOYSIUS CONVENT SCHOOL (  DIVINE CHILD HIGH SCHOOL)", //projimgs done
           "location": "YAVATMAL, MAHARASHTRA",
           "square_ft": "2 LACS SQ.FT",
           "img": "/src/assets/SITES PHOTO/st_alon.jpg",
@@ -171,7 +174,7 @@ export const residential_project =  {
         },
         {
           "project_id": "9",
-          "project_name": "PRABHAT INDUSTRIES",
+          "project_name": "PRABHAT INDUSTRIES", //projimgs done
           "location": "L.B.S. MARG, OPP CIPLA, VIKROLI (W)., Mumbai, Maharashtra",
           "square_ft": "58,000SQ.FT", 
           "img": "/src/assets/SITES PHOTO/prabhat industries.jpg",
@@ -181,7 +184,7 @@ export const residential_project =  {
         },
         {
           "project_id": "10",
-          "project_name": "PRABHAT ELASTOMERS PVT. LTD.",
+          "project_name": "PRABHAT ELASTOMERS PVT. LTD.", //projimgs done
           "location": "G.I.D.C. SARIGAM, UMERGAM, DISTRICT- VALSAD.",
           "img": "/src/assets/SITES PHOTO/prabhat elatomer.png",
           "square_ft": "78,000SQ.FT",
@@ -200,17 +203,19 @@ export const residential_project =  {
         },
         {
           "project_id": "12",
-          "project_name": "ASMITA SCHOOL",
+          "project_name": "ASMITA SCHOOL", //projImgs done
           "location": "WESTERN EXPRESS HIHGWAY JOGESHWARI (E),MUMBAI-400060.",
           "square_ft": "32,200SQ.FT", 
+          "img":"/src/assets/SITES PHOTO/asmita.jpg",
           "architect": "ARCHITECT ARCH- UNIQUER.C.C M/S DAMBLE & THAKURDESAI",
           "start_date": "2020-02-15",
           "end_date": "2021-05-30"
         },
         {
           "project_id": "13",
-          "project_name": "COOPKING ENAMIL WAIRE MFG.CO",
+          "project_name": "COOPKING ENAMIL WAIRE MFG.CO", //projImgs done
           "location": "PLOT NO.100, 101AT PANCHAL UDYOG NAGAR, NANI DAMAN, DAMAN. ",
+          "img":"/src/assets/SITES PHOTO/coopking.jpg",
           "square_ft": "40,000.00SQFT ", 
           "architect": "M/S.A.Z. VASI & CO",
           "start_date": "2020-02-15",
@@ -223,7 +228,7 @@ export const residential_project =  {
       "restoration": [
         {
           "project_id": "5",
-          "project_name": "TAX CENTRE PERMISES C.S.LTD.",
+          "project_name": "TAX CENTRE PERMISES C.S.LTD.", //projImgs done
           "location": "CHANDIVALI, SAKINAKA, MUMBAI- 400 072.",
           "img": "/src/assets/SITES PHOTO/TAX CENTER CHANDIVALI/IMG_20231103_0064.jpg",
           "square_ft": "1,80,00,000.00 SQ.FT", //unknow
@@ -233,7 +238,7 @@ export const residential_project =  {
         },
         {
           "project_id": "11",
-          "project_name": "DIVINE CHILDHIGH SCHOOL",
+          "project_name": "DIVINE CHILDHIGH SCHOOL",//projImgs done
           "location": "CHAKALA, ANDHERI (E)",
           "img": "/src/assets/SITES PHOTO/divinechild.jpg", 
           "square_ft": "1,80,00,000.00 SQ.FT", //unknow

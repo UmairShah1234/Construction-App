@@ -8,7 +8,7 @@ import ImageListItem from '@mui/material/ImageListItem';
 
 const ProjectImages = () => {
     const  {project_name} = useParams()
-    console.log(project_name)
+    //console.log(project_name)
     const images = project_images[project_name];
     const [data,setData] = useState({img: '', i:0})
     const viewImage = (img, i) => {
