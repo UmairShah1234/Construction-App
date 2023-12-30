@@ -9,6 +9,7 @@ import { Link, useParams } from "react-router-dom";
 import { commercial_projects, residential_project } from "../data/projects";
 import ProjectCard from "./ProjectCard";
 import { KeyboardArrowRight } from "@mui/icons-material";
+import ImagesModal from "./ImagesModal";
 
 const IndividualProject = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -31,7 +32,7 @@ const IndividualProject = () => {
       for (const subCategory in residential_project[category]) {
         for (const project of residential_project[category][subCategory]) {
           if (project.project_name === project_name) {
-           // console.log(project);
+            // console.log(project);
             return project;
           }
         }
@@ -44,7 +45,7 @@ const IndividualProject = () => {
       for (const subCategory in commercial_projects[category]) {
         for (const project of commercial_projects[category][subCategory]) {
           if (project.project_name === project_name) {
-          //  console.log(project);
+            //  console.log(project);
             return project;
           }
         }
@@ -91,15 +92,18 @@ const IndividualProject = () => {
                     color="text.secondary"
                     component="div"
                   >
-                    <Link
+                    <button
                       className="btn btn-outline-danger rounded-0"
-                      to={`/projectImages/${project_name}`}
+                      // to={`/projectImages/${project_name}`}
+                      data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop"
                     >
                       More Images <KeyboardArrowRight />
-                    </Link>
+                    </button>
                   </Typography>
                 </div>
               </div>
+              <ImagesModal />
               {/* <Box
             sx={{ display: "flex", alignItems: "center", pl: 1, pb: 1 }}
           ></Box> */}
@@ -178,12 +182,15 @@ const IndividualProject = () => {
                     color="text.secondary"
                     component="div"
                   >
-                    <Link
+                    <button
                       className="btn btn-outline-danger rounded-0"
-                      to={`/projectImages/${project_name}`}
+                      // to={`/projectImages/${project_name}`}
+                      data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop"
                     >
                       More Images <KeyboardArrowRight />
-                    </Link>
+                    </button>
+                    <ImagesModal />
                   </Typography>
                 </div>
               </div>
