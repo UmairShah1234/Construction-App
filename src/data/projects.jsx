@@ -65,9 +65,10 @@ export const residential_project =  {
         },
         {
           "project_id": "10",
-          "project_name": "MR. MOHD. TAHER GULAM ABBAS. BUNGLOW",
+          "project_name": "MR. MOHD. TAHER GULAM ABBAS. BUNGLOW", //projImgs done
           "location": "KHAMBHAT GUJARAT",
           "square_ft": "23,000SQ.FT",
+          "img": "/src/assets/SITES PHOTO/tahirbunglow.jpg",
           "architect": "M/s. Aesthetic Designs J.A.CHAHWALA",
           "start_date": "2020-02-15",
           "end_date": "2021-05-30"
@@ -84,9 +85,10 @@ export const residential_project =  {
         },
         {
           "project_id": "12",
-          "project_name": "DOWOODI BOHRA TRUST MASJID",
+          "project_name": "DOWOODI BOHRA TRUST MASJID",  //projimgs done
           "location": "MAHESHWAR, NEAR INDOR, MP.",
           "square_ft": "16554 SQ.FT", 
+          "img": "/src/assets/SITES PHOTO/bohra masjid indore/IMG-20231230-WA0038.jpg",
           "architect": "ARCHITECT I.M. ASSOCIATE R.C.C. J.J. KIKANI",
           "start_date": "2020-02-15",
           "end_date": "2021-05-30"
@@ -153,6 +155,7 @@ export const residential_project =  {
           "project_name": "CRYSTALINE EXPORTS LTD.",
           "location": "133, MAROL CO.OP. IND. LTD. ANDHERI (E), MUMBAI-400 072.",
           "square_ft": "8.50 Lakh Sqft.", //unknow
+          "img": "/src/assets/SITES PHOTO/crystaline2.jpg",
           "architect": "M/S.VORA & ASSOCIATES MR. ASHIT VORA",
           "start_date": "2023-03-10",
           "end_date": "2024-06-30"
@@ -194,9 +197,10 @@ export const residential_project =  {
         },
         {
           "project_id": "15",
-          "project_name": "SHIVAM FABRICS PVT LTD",
+          "project_name": "SHIVAM FABRICS PVT LTD", //projimgs done
           "location": "WALIV PHATTA,VASAI ( E ), THANE",
           "square_ft": "40,000SQ.FT",
+          "img": "/src/assets/SITES PHOTO/Shivam1.jpg",
           "architect": "MR. SUNIL SHAH (Kala Chakara)",
           "start_date": "2020-02-15",
           "end_date": "2021-05-30"
@@ -206,7 +210,7 @@ export const residential_project =  {
           "project_name": "ASMITA SCHOOL", //projImgs done
           "location": "WESTERN EXPRESS HIHGWAY JOGESHWARI (E),MUMBAI-400060.",
           "square_ft": "32,200SQ.FT", 
-          "img":"/src/assets/SITES PHOTO/asmita.jpg",
+          "img":"/src/assets/SITES PHOTO/asmita1.jpg",
           "architect": "ARCHITECT ARCH- UNIQUER.C.C M/S DAMBLE & THAKURDESAI",
           "start_date": "2020-02-15",
           "end_date": "2021-05-30"

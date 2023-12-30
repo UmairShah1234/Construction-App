@@ -1,5 +1,10 @@
 import { ImageList, ImageListItem } from "@mui/material";
 import React from "react";
+import { useParams } from "react-router-dom";
+import { project_images } from "../data/projectImgs";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import SingleImageModal from "./SingleImageModal";
+import { useState } from "react";
 
 const itemData = [
   { img: "/src/assets/SITES PHOTO/mutha1.jpg" },
@@ -9,14 +14,30 @@ const itemData = [
 ];
 
 const ImagesModal = () => {
+  const  {project_name} = useParams()
+  // console.log(project_name)
+    //console.log(project_name)
+    const images = project_images[project_name];
+
+    
+     const [selectedImage, setSelectedImage] = useState(null);
+
+  const viewImage = (img) => {
+    setSelectedImage(img);
+  };
+  const closeImageModal = () => {
+    setSelectedImage(null);
+  };
+  
   return (
+    <>
     <div>
       <div
         className="modal fade"
         id="staticBackdrop"
         data-bs-backdrop="static"
         data-bs-keyboard="false"
-        tabindex="-1"
+  
         aria-labelledby="staticBackdropLabel"
         aria-hidden="true"
       >
@@ -35,23 +56,27 @@ const ImagesModal = () => {
             </div>
             <div className="modal-body">
               <div>
-                <ImageList
-                  sx={{ width: 400, height: 450 }}
-                  cols={2}
-                  variant="standard"
-                  rowHeight={4}
-                >
-                  {itemData.map((item) => (
-                    <ImageListItem key={item.img}>
-                      <img
-                        srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-                        src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-                        alt={item.title}
-                        loading="lazy"
-                      />
-                    </ImageListItem>
-                  ))}
-                </ImageList>
+              <ResponsiveMasonry
+                columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}
+            >
+                <Masonry gutter='20px'>
+                {images.map((image, index) => (
+                  <>
+                    <button
+                    className="btn  rounded-0"
+                    // to={`/projectImages/${project_name}`}
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop1"
+                  >
+            <img key={index} src={image.img}  style={{width: "100%",height: "100%", display: "block"}} onClick={() => viewImage(image.img, index)} alt='' />
+            </button>
+        
+            </>
+          ))}
+                   
+                 
+                </Masonry>
+            </ResponsiveMasonry>
               </div>
             </div>
             <div className="modal-footer">
@@ -69,7 +94,20 @@ const ImagesModal = () => {
           </div>
         </div>
       </div>
+
+      {selectedImage && (
+          <SingleImageModal
+            imgUrl={selectedImage}
+            closeModal={closeImageModal}
+          />
+        )}
     </div>
+
+
+
+
+   
+    </>
   );
 };
 

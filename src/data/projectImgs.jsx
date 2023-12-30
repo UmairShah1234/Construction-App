@@ -331,11 +331,57 @@ export const project_images = {
  "ASMITA SCHOOL":[
     {
         img: "/src/assets/SITES PHOTO/asmita.jpg"
-    }
+    },
+    {
+        img: "/src/assets/SITES PHOTO/asmita1.jpg"
+    },
  ],
  "DIVINE CHILDHIGH SCHOOL": [
     {
         img: "/src/assets/SITES PHOTO/divinechild.jpg"
     }
- ]
+  ],
+  "MR. MOHD. TAHER GULAM ABBAS. BUNGLOW": [
+
+    {
+        img: "/src/assets/SITES PHOTO/tahirbunglow.jpg"
+    }
+  ],
+  "DOWOODI BOHRA TRUST MASJID": [
+    {
+      img: "/src/assets/SITES PHOTO/bohra masjid indore/IMG-20231230-WA0012.jpg"
+  },
+    {
+      img: "/src/assets/SITES PHOTO/bohra masjid indore/IMG-20231230-WA0015.jpg"
+  },
+    {
+      img: "/src/assets/SITES PHOTO/bohra masjid indore/IMG-20231230-WA0016.jpg"
+  },
+    {
+      img: "/src/assets/SITES PHOTO/bohra masjid indore/IMG-20231230-WA0017.jpg"
+  },
+    {
+      img: "/src/assets/SITES PHOTO/bohra masjid indore/IMG-20231230-WA0038.jpg"
+  },
+  ],
+  "SHIVAM FABRICS PVT LTD": [
+    {
+      img: "/src/assets/SITES PHOTO/Shivam1.jpg"
+  },
+    {
+      img: "/src/assets/SITES PHOTO/Shivam2.jpg"
+  },
+    {
+      img: "/src/assets/SITES PHOTO/Shivam3.jpg"
+  },
+  ],
+  "CRYSTALINE EXPORTS LTD.": [
+    {
+      img: "/src/assets/SITES PHOTO/crystaline1.jpg"
+  },
+    {
+      img: "/src/assets/SITES PHOTO/crystaline2.jpg"
+  },
+
+  ]
 };

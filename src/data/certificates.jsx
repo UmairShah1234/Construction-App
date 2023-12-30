@@ -1,5 +1,8 @@
 export const certificates =  [
     {
+img: "/src/assets/certificate/STDIO TAB CERTIFICETE_pages-to-jpg-0001.jpg"
+},
+    {
 img: "/src/assets/certificate/IMG_20231103_0083_page-0001.jpg"
 },
    

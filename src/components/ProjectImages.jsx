@@ -51,7 +51,7 @@ const ProjectImages = () => {
         </ImageListItem>
       ))}
     </ImageList> */}
-  );   
+
     </div>
     </>
    
