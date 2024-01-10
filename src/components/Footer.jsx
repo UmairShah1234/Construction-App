@@ -88,20 +88,20 @@ const Footer = () => {
                 <div className="col-3">
                   <h2 className="">Contacts</h2>
                   <div className="col list-group">
-                    <Link
+                  <Link
                       to={`mailto:${emailAddress}`}
                       className="mb-3 text-decoration-none text-dark"
                     >
-                      simplygaming@gmail.com
+                    haenggllp@gmail.com
+                    </Link>
+                    <Link to="" className="mb-3 text-decoration-none text-dark">
+                      hagroup.in
                     </Link>
                     <Link to="/" className="mb-3 text-decoration-none text-dark">
-                      simplygaming.in
+                    hagroup@facebook
                     </Link>
-                    <Link to="/" className="mb-3 text-decoration-none text-dark">
-                      simplygaming@facebook
-                    </Link>
-                    <Link to="/" className="mb-3 text-decoration-none text-dark">
-                      +91 99877 94974
+                    <Link to="https://wa.me/+918767272913" target="_blank" className="mb-3 text-decoration-none text-dark">
+                      +91 8767272913
                     </Link>
                   </div>
                 </div>
@@ -226,16 +226,16 @@ const Footer = () => {
                       to={`mailto:${emailAddress}`}
                       className="mb-3 text-decoration-none text-dark"
                     >
-                      simplygaming@gmail.com
+                    haenggllp@gmail.com
                     </Link>
                     <Link to="" className="mb-3 text-decoration-none text-dark">
-                      simplygaming.in
+                      hagroup.in
                     </Link>
                     <Link to="/" className="mb-3 text-decoration-none text-dark">
-                      simplygaming@facebook
+                    hagroup@facebook
                     </Link>
-                    <Link to="/" className="mb-3 text-decoration-none text-dark">
-                      +91 99877 94974
+                    <Link to="https://wa.me/+918767272913" target="_blank" className="mb-3 text-decoration-none text-dark">
+                      +91 8767272913
                     </Link>
                   </div>
                 </div>

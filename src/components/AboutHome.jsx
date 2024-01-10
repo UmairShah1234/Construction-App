@@ -11,28 +11,17 @@ const AboutHome = () => {
         <div className="card-body col-md-6">
           <h3>
             About <br />
-            Jaatvedas Construction Co. Pvt. Ltd
+            HA Group Of Construction Co. Pvt. Ltd
           </h3>
           <p>
-            Jaatvedas Group has a rich history in the field of construction
-            industry in India. We are today, one of the fastest growing civil
-            and building contractors in India. We have successfully completed
-            some of the most challenging infrastructure projects in the country.
-            The name Jaatvedas emerging from a Sanskrit root implies the force
-            obtained from the purest element of fire. The name signifies an
-            abundance of energy and growth in itself.
-          </p>
-          <p>
-            With specialized experience in the construction industry, we at JCC,
-            have carved a niche for ourselves as one of the fastest growing
-            civil contractors of the country, and with over 15 years of
-            experience in the industry, we have constructed over 5.6 million
-            square feet.
-          </p>
-          <p>
-            JCC is an organization with a pan India Presence having offices in
-            different states of India.
-          </p>
+          Welcome to H.A Group, where excellence meets experience. With a rich heritage spanning 61 years, we take pride in our diverse portfolio encompassing residential, commercial, restoration, new construction, bungalows, hospitality, industrial, and every facet of the construction industry.
+            </p>
+            <p>
+            Having meticulously crafted projects across various categories, we bring a wealth of knowledge and expertise to each endeavor. Our commitment to quality and innovation has resulted in the construction of an impressive 4.5 million square feet of space to date.
+            </p>
+            <p>
+            At H.A Group, we believe in turning visions into reality, delivering unparalleled craftsmanship and building enduring relationships. Join us on this journey of construction excellence, where your dreams take shape, backed by over six decades of unwavering commitment and proven success..
+            </p>
         </div>
       </div>
     </div>

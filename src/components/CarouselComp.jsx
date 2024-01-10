@@ -34,7 +34,7 @@ const CarouselComp = () => {
         <div className="carousel-item active">
           <img src="/src/assets/SITES PHOTO/On Going Dombivali site/WhatsApp Image 2023-08-07 at 4.20.52 PM.jpeg" alt="" width={"100%"} height={650} />
           <div className="carousel-caption d-none d-md-block">
-            <h5>Get The Best Gaming Experience</h5>
+            <h5>Some representative placeholder content for the first slide.</h5>
             <p></p>
           </div>
         </div>
