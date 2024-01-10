@@ -16,7 +16,7 @@ const Footer = () => {
               <div className="row">
                 <div className="col-3 d-flex justify-content-center align-items-center">
                   <div className="">
-                    <Avatar src="/src/assets/Logo.png"  alt="" sx={{ width: 200, height: 200 }} />
+                    <Avatar src="/assets/Logo.png"  alt="" sx={{ width: 200, height: 200 }} />
                   </div>
                   {/* <h2 className="">Past Time Entertainment</h2> */}
                 </div>

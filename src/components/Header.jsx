@@ -5,7 +5,7 @@ const Header = () => {
     <nav className="navbar navbar-expand-lg navbar-light shadow-lg phone">
       <div className="container-fluid">
         <Link className="navbar-brand ms-2" to="/">
-          <img src="/src/assets/Logo.png" alt="" width="50" height="50" />
+          <img src="/assets/Logo.png" alt="" width="50" height="50" />
         </Link>
 
         <div

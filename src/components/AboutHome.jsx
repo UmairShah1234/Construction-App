@@ -6,7 +6,7 @@ const AboutHome = () => {
       <div className="container row p-5 ">
 
         <div className="col-md-6 text-center">
-          <img src="/src/assets/steel yard.jpg" alt="" width="500" height="500" />
+          <img src="/assets/steel yard.jpg" alt="" width="500" height="500" />
         </div>
         <div className="card-body col-md-6">
           <h3>
