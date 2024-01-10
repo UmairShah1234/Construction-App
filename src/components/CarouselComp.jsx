@@ -1,6 +1,6 @@
 import React from "react";
-import pic1 from "../assets/carousel1.jpeg";
-import pic2 from "../assets/carousel2.jpeg";
+import pic1 from "../dist/assets/carousel1.jpeg";
+import pic2 from "../dist/assets/carousel2.jpeg";
 
 const CarouselComp = () => {
   return (
@@ -32,21 +32,21 @@ const CarouselComp = () => {
       </div>
       <div className="carousel-inner">
         <div className="carousel-item active">
-          <img src="/assets/SITES PHOTO/On Going Dombivali site/WhatsApp Image 2023-08-07 at 4.20.52 PM.jpeg" alt="" width={"100%"} height={650} />
+          <img src="/dist/assets/SITES PHOTO/On Going Dombivali site/WhatsApp Image 2023-08-07 at 4.20.52 PM.jpeg" alt="" width={"100%"} height={650} />
           <div className="carousel-caption d-none d-md-block">
             <h5>Some representative placeholder content for the first slide.</h5>
             <p></p>
           </div>
         </div>
         <div className="carousel-item">
-          <img src="/assets/SITES PHOTO/mutha1.jpg" alt="" width={"100%"} height={650} />
+          <img src="/dist/assets/SITES PHOTO/mutha1.jpg" alt="" width={"100%"} height={650} />
           <div className="carousel-caption d-none d-md-block">
             <h5></h5>
             <p>Some representative placeholder content for the second slide.</p>
           </div>
         </div>
         <div className="carousel-item">
-          <img src="/assets/SITES PHOTO/silver.jpg"  alt="" width={"100%"} height={650} />
+          <img src="/dist/assets/SITES PHOTO/silver.jpg"  alt="" width={"100%"} height={650} />
           <div className="carousel-caption d-none d-md-block">
             <h5>Third slide label</h5>
             <p>Some representative placeholder content for the third slide.</p>
