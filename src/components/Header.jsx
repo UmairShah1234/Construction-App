@@ -1,18 +1,36 @@
+import { Avatar } from "@mui/material";
 import { Link } from "react-router-dom";
-
+// /assets/Logo.png
 const Header = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light shadow-lg phone">
+    <nav className="navbar navbar-expand-lg navbar-light phone">
       <div className="container-fluid">
         <Link className="navbar-brand ms-2" to="/">
-          <img src="/assets/Logo.png" alt="" width="50" height="50" />
+          <Avatar
+            src="/assets/Logo.png"
+            // className="shadow-lg"
+            
+            alt=""
+            sx={{
+              width: 55,
+              height: 55,
+              
+            }}
+          />
         </Link>
-
-        <div
-          className="collapse navbar-collapse justify-content-end "
-          id="navbarSupportedContent"
+        <button
+          className="navbar-toggler shadow"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          <ul className="navbar-nav  mb-2 mb-lg-0">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav mb-2 mb-lg-0">
             <li className="nav-item mx-3">
               <Link className="nav-link" aria-current="page" to="/">
                 Home
@@ -35,7 +53,7 @@ const Header = () => {
                 Projects
               </a>
               <ul
-                className="dropdown-menu mt-3  phone"
+                className="dropdown-menu phone shadow"
                 aria-labelledby="navbarDropdown"
               >
                 <li>
