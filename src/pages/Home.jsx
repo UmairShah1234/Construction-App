@@ -7,6 +7,7 @@ import ProjectCard from "../components/ProjectCard";
 import CarouselComp from "../components/CarouselComp";
 import { clients } from "../data/clients";
 import { commercial_projects, residential_project } from "../data/projects";
+import ProjectTable from "../components/ProjectTable";
 
 const Home = () => {
   return (
@@ -156,6 +157,10 @@ const Home = () => {
             </marquee>
           </div>
         </div>
+      </div>
+
+      <div className="container">
+        <ProjectTable />
       </div>
     </div>
   );
