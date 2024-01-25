@@ -7,9 +7,11 @@ import { commercial_projects, residential_project } from "../data/projects";
 import ProjectCard from "./ProjectCard";
 import { KeyboardArrowRight } from "@mui/icons-material";
 import ImagesModal from "./ImagesModal";
+import { useMediaQuery } from "@mui/material";
 
 const IndividualProject = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
+  const nonMobile = useMediaQuery("(min-width: 1200px)");
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -56,7 +58,10 @@ const IndividualProject = () => {
     <div className="container p-1">
       {resProject ? (
         <>
-          <Card
+        {nonMobile? 
+      (
+        <>
+        <Card
             className="indvidualProjCard mainCard"
             sx={{
               display: "grid",
@@ -113,6 +118,73 @@ const IndividualProject = () => {
               alt="project"
             />
           </Card>
+        </>
+      )  :
+      (
+        <>
+        <Card
+            className="indvidualProjCard mainCard d-flex flex-column-reverse"
+            sx={{
+              // display: "grid",
+              // // gridTemplateColumns: "1fr 2fr",
+              // height: "85vh",
+              // padding: "15px",
+              // margin: "15px",
+            }}
+          >
+             <div
+              className="contentBox"
+              sx={{ height: "30%", marginRight: "15px" }}
+            >
+              <div className="mx-3 py-1">
+                <div className="email info">
+                  <h3>{resProject.project_name}</h3>
+                  <p className="text-decoration-underline">
+                    {resProject.location}
+                  </p>
+                  <h3>SQUARE FEET</h3>
+                  <p className="text-decoration-underline">
+                    {resProject.square_ft}
+                  </p>
+                  <h3>Architect</h3>
+                  <p className="text-decoration-underline">
+                    {resProject.architect}
+                  </p>
+                  <Typography
+                    variant="subtitle1"
+                    color="text.secondary"
+                    component="div"
+                  >
+                    <button
+                      className="btn btn-outline-danger rounded-0"
+                      // to={`/projectImages/${project_name}`}
+                      data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop"
+                    >
+                      More Images <KeyboardArrowRight />
+                    </button>
+                  </Typography>
+                </div>
+              </div>
+              <ImagesModal />
+              {/* <Box
+            sx={{ display: "flex", alignItems: "center", pl: 1, pb: 1 }}
+          ></Box> */}
+            </div>
+            <CardMedia
+              component="img"
+              className="imgBox"
+              sx={{ height: "100%" }}
+              image={resProject.img}
+              alt="project"
+            />
+           
+          </Card></>
+      
+      )
+      
+      }
+          
 
           <div
             className="border-1"
@@ -149,7 +221,9 @@ const IndividualProject = () => {
         </>
       ) : (
         <>
-          <Card
+        {nonMobile? 
+        (<>
+         <Card
             className="indvidualProjCard mainCard"
             sx={{
               display: "grid",
@@ -203,6 +277,68 @@ const IndividualProject = () => {
               alt="project"
             />
           </Card>
+        </>)
+      :
+      (
+        <>
+         <Card
+            className="indvidualProjCard mainCard d-flex flex-column-reverse"
+            // sx={{
+            //   display: "grid",
+            //   gridTemplateColumns: "1fr 2fr",
+            //   height: "85vh",
+            //   padding: "15px",
+            //   margin: "15px",
+            // }}
+          >
+            <div>
+              <div className="mx-3 py-1">
+                <div className="email info">
+                  <h3>{comProject.project_name}</h3>
+                  <p className="text-decoration-underline">
+                    {comProject.location}
+                  </p>
+                  <h3>SQUARE FEET</h3>
+                  <p className="text-decoration-underline">
+                    {comProject.square_ft}
+                  </p>
+                  <h3>Architect</h3>
+                  <p className="text-decoration-underline">
+                    {comProject.architect}
+                  </p>
+                  <Typography
+                    variant="subtitle1"
+                    color="text.secondary"
+                    component="div"
+                  >
+                    <button
+                      className="btn btn-outline-danger rounded-0"
+                      // to={`/projectImages/${project_name}`}
+                      data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop"
+                    >
+                      More Images <KeyboardArrowRight />
+                    </button>
+                    <ImagesModal />
+                  </Typography>
+                </div>
+              </div>
+              {/* <Box
+           sx={{ display: "flex", alignItems: "center", pl: 1, pb: 1 }}
+         ></Box> */}
+            </div>
+            <CardMedia
+              component="img"
+              className="imgBox "
+              sx={{ height: "100%" }}
+              image={comProject.img}
+              alt="project"
+            />
+          </Card>
+        </>
+      )
+      }
+         
           <div
             className="border-1"
             style={{ width: "85vw", overflow: "hidden" }}

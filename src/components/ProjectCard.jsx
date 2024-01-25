@@ -17,7 +17,7 @@ const ProjectCard = ({ id,img,name, location }) => {
               <h2>{name}</h2>
             </div>
             <div className="card-title p-1 text-center">{location}</div>
-            {/* <div className="exploreBtn"> */}
+            <div className="exploreBtn">
             <Link
               to={`/${name}`}
               // to={links}
@@ -28,7 +28,7 @@ const ProjectCard = ({ id,img,name, location }) => {
               </div>
                
             </Link>
-            {/* </div> */}
+            </div>
            
           </div>
          

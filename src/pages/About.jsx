@@ -7,7 +7,7 @@ const About = () => {
       <div className="row">
         <div className="col-md-6 d-flex align-items-center">
           <Avatar
-            src="https://media.istockphoto.com/id/1345384816/photo/construction-industry-and-engineering-in-post-recession-period.jpg?s=612x612&w=0&k=20&c=3sK6hLkePixyVhbjrSDKATOx9cVnbor2d2qASBkUucM="
+            src="/public/assets/worker.png"
             sx={{
               height: 500,
               width: 500,

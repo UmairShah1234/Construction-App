@@ -6,13 +6,14 @@ const AboutHome = () => {
 
   const isMobile = (
     <div className=" d-flex justify-content-center">
-      <img src="/assets/steel yard.jpg" alt="" width="300" height="300" />
+      <img src="/assets/aboutesign.png" alt="" width="300" height="300" />
+      {/* <img src="/public/assets/Building Your Dreams.png" alt="" width="300" height="300" /> */}
     </div>
   );
 
   const isNonMobile = (
     <div className="col-md-6  text-center">
-      <img src="/assets/steel yard.jpg" alt="" width="400" height="400" />
+      <img src="/assets/aboutesign.png" alt="" style={{objectFit:'fill'}} width="400" height="400" />
     </div>
   );
   return (

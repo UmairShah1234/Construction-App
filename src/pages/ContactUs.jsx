@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import HomeIcon from '@mui/icons-material/Home';
+import {Business} from '@mui/icons-material';
 import { Link } from "react-router-dom";
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
@@ -185,7 +185,7 @@ const ContactUs = () => {
                 className="infoBoxlink "
                 to={`tel: ${mobileNum}`}
               >
-                +91 8692881750
+               +91 22-28505831/30
               </Link>
               {/* if we want to put social media icons */}
            
@@ -205,7 +205,7 @@ const ContactUs = () => {
                 className="infoBoxlink "
                 to={`mailto:${emailAddress}`}
               >
-                devlanzzer@gmail.com
+               haenggllp@gmail.com
               </Link>
             
           </div>
@@ -215,7 +215,7 @@ const ContactUs = () => {
           <div className="infoBox  ">
    
               <span className="infoBoxh3">
-                <HomeIcon /> Address:
+                <Business /> Address:
               </span>
 
               <p>

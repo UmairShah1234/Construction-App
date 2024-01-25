@@ -8,6 +8,7 @@ import CarouselComp from "../components/CarouselComp";
 import { clients } from "../data/clients";
 import { commercial_projects, residential_project } from "../data/projects";
 import ProjectTable from "../components/ProjectTable";
+import { choose } from "../data/chooseus";
 
 const Home = () => {
   return (
@@ -24,7 +25,7 @@ const Home = () => {
         <div className="row m-3">
           <div className="col-md-3">
             <NumberCard
-              number={20}
+              number={4.5}
               text={"million sq ft"}
               desc={"TOTAL CONSTRUCTED AREA TILL DATE"}
               color={1}
@@ -33,8 +34,8 @@ const Home = () => {
 
           <div className="col-md-3">
             <NumberCard
-              number={20}
-              text={"million sq ft"}
+              number={40}
+              text={"million hours"}
               desc={"OF SAFE, ACCIDENT-FREE WORKING"}
               color={2}
             />
@@ -43,7 +44,7 @@ const Home = () => {
           <div className="col-md-3">
             <NumberCard
               number={20}
-              text={"million sq ft"}
+              text={"HighRises"}
               desc={"BUILT SINCE INCEPTION"}
               color={1}
             />
@@ -51,8 +52,8 @@ const Home = () => {
 
           <div className="col-md-3">
             <NumberCard
-              number={20}
-              text={"million sq ft"}
+              number={10}
+              text={"Commercial Complexes"}
               desc={"BUILT SINCE INCEPTION"}
               color={2}
             />
@@ -74,7 +75,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="row mb-1 shadow-lg">
+          <div className="row mb-1 shadow-lg d-flex justify-content-center" >
             {Object.keys(residential_project).map((cat) =>
               Object.keys(residential_project[cat]).map((subcat) =>
                 residential_project[cat][subcat]
@@ -122,7 +123,16 @@ const Home = () => {
           </h3>
 
           <div className="row">
-            <div className="col-md-4">
+            {choose.map((chooseCard) => {
+              return(
+                <>
+                <div className="col-md-4">
+                 <ChooseCard icon={chooseCard.icon} color={chooseCard.color} title={chooseCard.title} description={chooseCard.desc} />
+                 </div>
+                </>
+              )
+            })}
+            {/* <div className="col-md-4">
               <ChooseCard color />
             </div>
             <div className="col-md-4">
@@ -139,7 +149,7 @@ const Home = () => {
             </div>
             <div className="col-md-4">
               <ChooseCard />
-            </div>
+            </div> */}
           </div>
 
           <hr />

@@ -2,6 +2,7 @@ import React from "react";
 import Maps from "./Maps";
 import { Link } from "react-router-dom";
 import { Avatar, useMediaQuery } from "@mui/material";
+import { Business, Email,  Phone, PhoneIphone } from "@mui/icons-material";
 const Footer = () => {
  
     const emailAddress = "devlanzzer@gmail.com";
@@ -16,7 +17,9 @@ const Footer = () => {
               <div className="row">
                 <div className="col-3 d-flex justify-content-center align-items-center">
                   <div className="">
-                    <Avatar src="/assets/Logo.png"  alt="" sx={{ width: 200, height: 200 }} />
+                    <Avatar src="/assets/Logo.png"  alt="" variant="rounded" sx={{  width: 200,
+    height: 267, // Adjusted height to maintain a 3:4 aspect ratio
+    objectFit: "cover"}} />
                   </div>
                   {/* <h2 className="">Past Time Entertainment</h2> */}
                 </div>
@@ -92,17 +95,25 @@ const Footer = () => {
                       to={`mailto:${emailAddress}`}
                       className="mb-3 text-decoration-none text-dark"
                     >
-                    haenggllp@gmail.com
+                    <Email /> haenggllp@gmail.com
                     </Link>
                     <Link to="" className="mb-3 text-decoration-none text-dark">
-                      hagroup.in
+                    <Phone />Office +91 22-28505831/30
                     </Link>
-                    <Link to="/" className="mb-3 text-decoration-none text-dark">
-                    hagroup@facebook
-                    </Link>
-                    <Link to="https://wa.me/+918767272913" target="_blank" className="mb-3 text-decoration-none text-dark">
-                      +91 8767272913
-                    </Link>
+                    <Link
+                    to="https://wa.me/+919821145831"
+                    target="_blank"
+                    className="mb-3 text-decoration-none text-dark"
+                  >
+                    <PhoneIphone />Jameel Ahmed Ghori +91 9821145831
+                  </Link>
+                  <Link
+                    to="https://wa.me/+918767272913"
+                    target="_blank"
+                    className="mb-3 text-decoration-none text-dark"
+                  >
+                    <PhoneIphone />Zibran Ahmed Ghori +91 8767272913
+                  </Link>
                   </div>
                 </div>
               </div>
@@ -226,17 +237,25 @@ const Footer = () => {
                       to={`mailto:${emailAddress}`}
                       className="mb-3 text-decoration-none text-dark"
                     >
-                    haenggllp@gmail.com
+                   <Email /> haenggllp@gmail.com
                     </Link>
                     <Link to="" className="mb-3 text-decoration-none text-dark">
-                      hagroup.in
+                    <Phone />Office +91 22-28505831/30
                     </Link>
-                    <Link to="/" className="mb-3 text-decoration-none text-dark">
-                    hagroup@facebook
-                    </Link>
-                    <Link to="https://wa.me/+918767272913" target="_blank" className="mb-3 text-decoration-none text-dark">
-                      +91 8767272913
-                    </Link>
+                    <Link
+                    to="https://wa.me/+919821145831"
+                    target="_blank"
+                    className="mb-3 text-decoration-none text-dark"
+                  >
+                    <PhoneIphone />Jameel Ahmed Ghori +91 9821145831
+                  </Link>
+                  <Link
+                    to="https://wa.me/+918767272913"
+                    target="_blank"
+                    className="mb-3 text-decoration-none text-dark"
+                  >
+                    <PhoneIphone />Zibran Ahmed Ghori +91 8767272913
+                  </Link>
                   </div>
                 </div>
               </div>
