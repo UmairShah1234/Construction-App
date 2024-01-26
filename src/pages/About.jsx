@@ -1,12 +1,15 @@
-import { Avatar } from "@mui/material";
+import { Avatar, useMediaQuery } from "@mui/material";
 import React from "react";
 
 const About = () => {
+  const nonMobile = useMediaQuery("(min-width: 1200px)");
   return (
     <div className="container mt-3">
       <div className="row">
         <div className="col-md-6 d-flex align-items-center">
-          <Avatar
+          {nonMobile?
+          (<>
+<Avatar
             src="/assets/worker.png"
             sx={{
               height: 500,
@@ -14,10 +17,25 @@ const About = () => {
             }}
             className="shadow"
           />
+          </>
+          ):
+          (
+            <>
+            <Avatar
+            src="/assets/worker.png"
+            sx={{
+              height: 300,
+              width: 300,
+            }}
+            className="shadow mx-auto"
+          />
+            </>
+          )}
+          
         </div>
         <div className="col-md-6">
-          <h3 className="my-3">
-            <span className="text-secondary">About</span> <br />
+          <h3 className="my-3 text-center">
+            <span className="text-secondary ">About</span> <br />
             Company
           </h3>
           <div className="info phone ">
@@ -37,7 +55,7 @@ const About = () => {
 
       <div className="row">
         <div className="col-md-6">
-          <h3 className="my-3">
+          <h3 className="my-3 text-center">
             <span className="text-secondary">About</span> <br />
             Founder
           </h3>
@@ -50,14 +68,28 @@ const About = () => {
         </div>
 
         <div className="col-md-6 d-flex align-items-center">
-          <Avatar
+          {nonMobile?
+          (<>
+           <Avatar
             src="https://www.shutterstock.com/image-photo/group-portrait-happy-confident-young-260nw-1904033500.jpg"
             sx={{
               height: 500,
               width: 500,
             }}
             className="shadow"
+          /></>)
+        :
+        (<>
+         <Avatar
+            src="https://www.shutterstock.com/image-photo/group-portrait-happy-confident-young-260nw-1904033500.jpg"
+            sx={{
+              height: 300,
+              width: 300,
+            }}
+            className="shadow mx-auto"
           />
+        </>)}
+         
         </div>
       </div>
     </div>
