@@ -33,20 +33,20 @@ const Header = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav mb-2 mb-lg-0">
+          <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
             <li className="nav-item mx-3">
-              <Link className="nav-link" aria-current="page" to="/">
+              <Link className="nav-link fs-3" aria-current="page" to="/">
                 Home
               </Link>
             </li>
             <li className="nav-item mx-3">
-              <Link className="nav-link" to="/profile">
+              <Link className="nav-link fs-3" to="/profile">
                 About
               </Link>
             </li>
             <li className="nav-item dropdown mx-3 ">
               <a
-                className="nav-link dropdown-toggle "
+                className="nav-link dropdown-toggle fs-3 "
                 href="#"
                 id="navbarDropdown"
                 role="button"
@@ -62,7 +62,7 @@ const Header = () => {
                 <li>
                   <Link
                     to="/residential-projects"
-                    className="dropdown-item"
+                    className="dropdown-item fs-3"
                     href="#"
                   >
                     Residential
@@ -71,7 +71,7 @@ const Header = () => {
                 <li>
                   <Link
                     to="/commercial-projects"
-                    className="dropdown-item"
+                    className="dropdown-item fs-3"
                     href="#"
                   >
                     Commercial
@@ -80,17 +80,17 @@ const Header = () => {
               </ul>
             </li>
             <li className="nav-item mx-3">
-              <Link className="nav-link" to="/clients">
+              <Link className="nav-link fs-3" to="/clients">
                 Cients
               </Link>
             </li>
             <li className="nav-item mx-3">
-              <Link className="nav-link" to="/certificate">
+              <Link className="nav-link fs-3" to="/certificate">
                 Certificates
               </Link>
             </li>
             <li className="nav-item mx-3">
-              <Link className="nav-link" to="/contact-us">
+              <Link className="nav-link fs-3" to="/contact-us">
                 Contact Us
               </Link>
             </li>

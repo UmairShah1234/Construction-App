@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ProjectCard from "../components/ProjectCard";
 import {commercial_projects} from "../data/projects";
+import ProjectTable from "../components/ProjectTable";
 
 const CommercialProjects = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -183,7 +184,12 @@ const CommercialProjects = () => {
       )}
       </>
       }
-      
+      <div className="container">
+      <div className="my-3">
+          <h2 className="text-decoration-underline">Commercial Projects</h2>
+          <ProjectTable />
+        </div>
+      </div>
     </>
   );
 };

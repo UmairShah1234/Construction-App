@@ -214,10 +214,7 @@ const ResidentialProjects = () => {
       )}
 
       <div className="container">
-        <div className="my-3">
-          <h2 className="text-decoration-underline">Commercial Projects</h2>
-          <ProjectTable />
-        </div>
+        
         <div className="my-3">
           <h2 className="text-decoration-underline">Residentials Projects</h2>
           <ResidentialTable />
