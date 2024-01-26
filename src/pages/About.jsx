@@ -7,7 +7,7 @@ const About = () => {
       <div className="row">
         <div className="col-md-6 d-flex align-items-center">
           <Avatar
-            src="/public/assets/worker.png"
+            src="/assets/worker.png"
             sx={{
               height: 500,
               width: 500,

@@ -230,7 +230,7 @@ const data = [
 const ResidentialTable = () => {
   return (
     <div>
-      <div>
+      <div className="table-responsive">
         <table className="table table-bordered border-dark table-hover shadow border">
           <thead className="bg-danger">
             <tr>
