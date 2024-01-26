@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import ProjectCard from "../components/ProjectCard";
 import { residential_project } from "../data/projects";
+import ProjectTable from "../components/ProjectTable";
+import ResidentialTable from "../components/ResidentialTable";
 
 const ResidentialProjects = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -123,7 +125,7 @@ const ResidentialProjects = () => {
             Object.keys(residential_project[cat]).map((subcat) =>
               residential_project[cat][subcat].map((project) => (
                 <ProjectCard
-                img={project.img}
+                  img={project.img}
                   key={project.project_id}
                   name={project.project_name}
                   location={project.location}
@@ -144,7 +146,7 @@ const ResidentialProjects = () => {
                       (project) => (
                         <>
                           <ProjectCard
-                           img={project.img}
+                            img={project.img}
                             key={project.project_id}
                             name={project.project_name}
                             location={project.location}
@@ -159,7 +161,7 @@ const ResidentialProjects = () => {
                       (project) => (
                         <>
                           <ProjectCard
-                           img={project.img}
+                            img={project.img}
                             key={project.project_id}
                             name={project.project_name}
                             location={project.location}
@@ -180,7 +182,7 @@ const ResidentialProjects = () => {
                       (project) => (
                         <>
                           <ProjectCard
-                           img={project.img}
+                            img={project.img}
                             key={project.project_id}
                             name={project.project_name}
                             location={project.location}
@@ -195,7 +197,7 @@ const ResidentialProjects = () => {
                       (project) => (
                         <>
                           <ProjectCard
-                           img={project.img}
+                            img={project.img}
                             key={project.project_id}
                             name={project.project_name}
                             location={project.location}
@@ -210,6 +212,17 @@ const ResidentialProjects = () => {
           )}
         </>
       )}
+
+      <div className="container">
+        <div className="my-3">
+          <h2 className="text-decoration-underline">Commercial Projects</h2>
+          <ProjectTable />
+        </div>
+        <div className="my-3">
+          <h2 className="text-decoration-underline">Residentials Projects</h2>
+          <ResidentialTable />
+        </div>
+      </div>
     </>
   );
 };

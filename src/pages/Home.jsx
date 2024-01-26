@@ -169,9 +169,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="container">
-        <ProjectTable />
-      </div>
+      
     </div>
   );
 };
