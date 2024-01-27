@@ -35,18 +35,18 @@ const Header = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
             <li className="nav-item mx-3">
-              <Link className="nav-link fs-4 " aria-current="page" to="/">
+              <Link className="nav-link fs-5 " aria-current="page" to="/">
                 Home
               </Link>
             </li>
             <li className="nav-item mx-3">
-              <Link className="nav-link fs-4" to="/profile">
+              <Link className="nav-link fs-5" to="/profile">
                 About
               </Link>
             </li>
             <li className="nav-item dropdown mx-3 ">
               <a
-                className="nav-link dropdown-toggle fs-4  "
+                className="nav-link dropdown-toggle fs-5  "
                 href="#"
                 id="navbarDropdown"
                 role="button"
@@ -80,17 +80,17 @@ const Header = () => {
               </ul>
             </li>
             <li className="nav-item mx-3">
-              <Link className="nav-link fs-4" to="/clients">
+              <Link className="nav-link fs-5" to="/clients">
                 Cients
               </Link>
             </li>
             <li className="nav-item mx-3">
-              <Link className="nav-link fs-4 " to="/certificate">
+              <Link className="nav-link fs-5" to="/certificate">
                 Certificates
               </Link>
             </li>
             <li className="nav-item mx-3">
-              <Link className="nav-link fs-4" to="/contact-us">
+              <Link className="nav-link fs-5" to="/contact-us">
                 Contact Us
               </Link>
             </li>
