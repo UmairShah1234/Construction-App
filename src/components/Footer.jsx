@@ -115,7 +115,7 @@ Off Tel:- +91 22-28505831/30</p>
                     target="_blank"
                     className="mb-3 text-decoration-none text-dark"
                   >
-                    <PhoneIphone />Zeebran Ahmed Ghori +91 8767272913
+                    <PhoneIphone />Zebran Ahmed Ghori +91 8767272913
                   </Link>
                   </div>
                 </div>
@@ -259,7 +259,7 @@ Off Tel:- +91 22-28505831/30</p>
                     target="_blank"
                     className="mb-3 text-decoration-none text-dark"
                   >
-                    <PhoneIphone />Zibran Ahmed Ghori +91 8767272913
+                    <PhoneIphone />Zebran Ahmed Ghori +91 8767272913
                   </Link>
                   </div>
                 </div>
