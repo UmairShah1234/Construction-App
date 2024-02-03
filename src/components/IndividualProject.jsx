@@ -13,6 +13,8 @@ const IndividualProject = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const nonMobile = useMediaQuery("(min-width: 1200px)");
 
+
+
   useEffect(() => {
     const interval = setInterval(() => {
       setScrollPosition((prevPosition) => prevPosition + 1);

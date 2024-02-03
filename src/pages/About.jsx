@@ -52,8 +52,9 @@ const About = () => {
           </div>
         </div>
       </div>
-
-      <div className="row">
+{nonMobile?
+(<>
+ <div className="row">
         <div className="col-md-6">
           <h3 className="my-3 text-center">
             <span className="text-secondary">About</span> <br />
@@ -68,30 +69,140 @@ const About = () => {
         </div>
 
         <div className="col-md-6 d-flex align-items-center">
-          {nonMobile?
-          (<>
+         
            <Avatar
-            src="https://www.shutterstock.com/image-photo/group-portrait-happy-confident-young-260nw-1904033500.jpg"
+            src="/assets/haroonGhori.jpg"
             sx={{
-              height: 500,
-              width: 500,
+              height: 350,
+              width: 350,
             }}
-            className="shadow"
-          /></>)
-        :
+            className="shadow mx-auto"
+            variant="square"
+          />
+        {/* :
         (<>
          <Avatar
-            src="https://www.shutterstock.com/image-photo/group-portrait-happy-confident-young-260nw-1904033500.jpg"
+  src="/assets/haroonGhori.jpg"
             sx={{
               height: 300,
               width: 300,
             }}
             className="shadow mx-auto"
+            variant="square"
           />
-        </>)}
+        </>)} */}
          
         </div>
       </div>
+</>):
+(<>
+ <div className="row">
+        <div className="col-md-6">
+          <h3 className="my-3 text-center">
+            <span className="text-secondary">About</span> <br />
+            Founder
+          </h3>
+          <div className="info email mb-3">
+            <p>
+              In 1963, Late Mr.Haroon Abdul Karim Ghori established M/s HA Construction with a petite tea. Our founder has carried out new Construction and Retrofiting projects of reputed and multi-stored building with more than 50 years of experience in the construction industry. He had grown the company nationally multi disciplianry organization with the projects across India
+            </p>
+            
+          </div>
+        </div>
+
+        <div className="col-md-6 d-flex align-items-center">
+         
+           <Avatar
+            src="/assets/haroonGhori.jpg"
+            sx={{
+              height: 250,
+              width: 250,
+            }}
+            className="shadow mx-auto"
+            variant="square"
+          />
+       
+         
+        </div>
+      </div>
+</>)
+}
+     {nonMobile? 
+     (<>
+      <div className="row mb-5">
+      <div className="col-md-6 d-flex align-items-center">
+         
+           <Avatar
+            src="/assets/jameelGhori.jpg"
+            sx={{
+              height: 400,
+              width: 350,
+              objectFit: 'scale-down',
+            }}
+            className="shadow mx-auto"
+            variant="square"
+          />
+          
+       
+        </div>
+        <div className="col-md-6 d-flex align-items-center">
+
+          {/* <h3 className="my-3 text-center">
+            <span className="text-secondary">About</span> <br />
+            Founder
+          </h3> */}
+     
+      <div className="info email  ">
+            <p className="">
+              In 1963, Late Mr.Haroon Abdul Karim Ghori established M/s HA Construction with a petite tea. Our founder has carried out new Construction and Retrofiting projects of reputed and multi-stored building with more than 50 years of experience in the construction industry. He had grown the company nationally multi disciplianry organization with the projects across India
+            </p>
+            
+          </div>
+         
+        </div>
+
+        
+      </div>
+     </>) 
+    : (
+      <>
+       <div className="row mb-5">
+      
+        <div className="col-md-6 mt-5 d-flex align-items-center">
+
+        
+     
+      <div className="info email  ">
+            <p className="">
+              In 1963, Late Mr.Haroon Abdul Karim Ghori established M/s HA Construction with a petite tea. Our founder has carried out new Construction and Retrofiting projects of reputed and multi-stored building with more than 50 years of experience in the construction industry. He had grown the company nationally multi disciplianry organization with the projects across India
+            </p>
+            
+          </div>
+         
+        </div>
+        <div className="col-md-6 d-flex align-items-center">
+         
+         <Avatar
+          src="/assets/jameelGhori.jpg"
+          sx={{
+            height: 300,
+            width: 250,
+            objectFit: 'scale-down',
+          }}
+          className="shadow mt-3 mx-auto"
+          variant="square"
+        />
+        
+       
+      </div>
+        
+      </div>
+      </>
+    ) 
+    }
+
+
+     
     </div>
   );
 };

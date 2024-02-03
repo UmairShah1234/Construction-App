@@ -97,9 +97,12 @@ const Footer = () => {
                     >
                     <Email /> haenggllp@gmail.com
                     </Link>
-                    <Link to="" className="mb-3 text-decoration-none text-dark">
-                    <Phone />Office +91 22-28505831/30
-                    </Link>
+                    <p to="" className="mb-3 text-decoration-none text-dark">
+                    <Business />HA Group
+                    <p>B-206, Navkar Chambers, Near Marol Naka Metro Station,Andheri-Kurla Road,Andheri East, mumbai-400059
+Off Tel:- +91 22-28505831/30</p>
+
+                    </p>
                     <Link
                     to="https://wa.me/+919821145831"
                     target="_blank"
@@ -112,7 +115,7 @@ const Footer = () => {
                     target="_blank"
                     className="mb-3 text-decoration-none text-dark"
                   >
-                    <PhoneIphone />Zibran Ahmed Ghori +91 8767272913
+                    <PhoneIphone />Zeebran Ahmed Ghori +91 8767272913
                   </Link>
                   </div>
                 </div>
@@ -239,9 +242,11 @@ const Footer = () => {
                     >
                    <Email /> haenggllp@gmail.com
                     </Link>
-                    <Link to="" className="mb-3 text-decoration-none text-dark">
-                    <Phone />Office +91 22-28505831/30
-                    </Link>
+                    <p to="" className="mb-3 text-decoration-none text-dark">
+                    <Business />HA Group
+                    <p>B-206, Navkar Chambers, Near Marol Naka Metro Station,Andheri-Kurla Road,Andheri East, mumbai-400059
+Off Tel:- +91 22-28505831/30</p>
+                    </p>
                     <Link
                     to="https://wa.me/+919821145831"
                     target="_blank"
