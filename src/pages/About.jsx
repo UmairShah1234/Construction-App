@@ -1,6 +1,7 @@
 import { Avatar, useMediaQuery } from "@mui/material";
 import React from "react";
 import { motion } from "framer-motion";
+import { race } from "rxjs";
 
 const About = () => {
   const nonMobile = useMediaQuery("(min-width: 1200px)");
@@ -13,8 +14,8 @@ const About = () => {
               <Avatar
                 src="/assets/worker.png"
                 sx={{
-                  height: 500,
-                  width: 500,
+                  height: 400,
+                  width: 400,
                 }}
                 className="shadow"
               />
@@ -32,7 +33,7 @@ const About = () => {
             </>
           )}
         </div>
-        <div className="col-md-6">
+        <div className="col-md-6 mb-5">
           <h3 className="my-3 text-center">
             <span className="text-secondary ">About</span> <br />
             Company
@@ -96,6 +97,8 @@ const About = () => {
                 sx={{
                   height: 350,
                   width: 350,
+                  borderRadius: 4,
+                  objectFit: "cover",
                 }}
                 className="shadow mx-auto"
                 variant="square"
@@ -141,6 +144,8 @@ const About = () => {
                 sx={{
                   height: 250,
                   width: 250,
+                  borderRadius: 4,
+                  objectFit: "cover",
                 }}
                 className="shadow mx-auto"
                 variant="square"
@@ -158,7 +163,8 @@ const About = () => {
                 sx={{
                   height: 400,
                   width: 350,
-                  objectFit: "scale-down",
+                  objectFit: "cover",
+                  borderRadius: 4,
                 }}
                 className="shadow mx-auto"
                 variant="square"
@@ -176,12 +182,7 @@ const About = () => {
                 className="info email  "
               >
                 <p className="">
-                  In 1963, Late Mr.Haroon Abdul Karim Ghori established M/s HA
-                  Construction with a petite tea. Our founder has carried out
-                  new Construction and Retrofiting projects of reputed and
-                  multi-stored building with more than 50 years of experience in
-                  the construction industry. He had grown the company nationally
-                  multi disciplianry organization with the projects across India
+                Inheriting a legacy of excellence, Mr. Jameel A. Ghori, at 54 years old, leads M/s HA Construction as its Owner. With over four decades of expertise in the construction domain, Mr. Ghori specializes in the meticulous repair of old buildings, the construction of new R.C.C structures, and the revitalization of dilapidated properties. Stepping into his father's footsteps, Mr. Ghori embodies the values of dedication and craftsmanship that have defined the company since its inception in 1963. Under his stewardship, M/s HA Construction continues to thrive, delivering quality projects across India and upholding its reputation as a trusted name in the construction industry.
                 </p>
               </motion.div>
             </div>
@@ -193,12 +194,7 @@ const About = () => {
             <div className="col-md-6 mt-5 d-flex align-items-center">
               <div className="info email  ">
                 <p className="">
-                  In 1963, Late Mr.Haroon Abdul Karim Ghori established M/s HA
-                  Construction with a petite tea. Our founder has carried out
-                  new Construction and Retrofiting projects of reputed and
-                  multi-stored building with more than 50 years of experience in
-                  the construction industry. He had grown the company nationally
-                  multi disciplianry organization with the projects across India
+                Inheriting a legacy of excellence, Mr. Jameel A. Ghori, at 54 years old, leads M/s HA Construction as its Owner. With over four decades of expertise in the construction domain, Mr. Ghori specializes in the meticulous repair of old buildings, the construction of new R.C.C structures, and the revitalization of dilapidated properties. Stepping into his father's footsteps, Mr. Ghori embodies the values of dedication and craftsmanship that have defined the company since its inception in 1963. Under his stewardship, M/s HA Construction continues to thrive, delivering quality projects across India and upholding its reputation as a trusted name in the construction industry.
                 </p>
               </div>
             </div>
@@ -208,7 +204,8 @@ const About = () => {
                 sx={{
                   height: 300,
                   width: 250,
-                  objectFit: "scale-down",
+                  objectFit: "cover",
+                  borderRadius: 4,
                 }}
                 className="shadow mt-3 mx-auto"
                 variant="square"
