@@ -29,9 +29,17 @@ const ContactUs = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("formSubmit called");
+   // console.log("formSubmit called");
     try {
-      await axios.post("http://localhost:5001/api/send-email", formData);
+      const response = await axios.post(
+        "https://haconstructions.in/contact_form.php",
+        new URLSearchParams(formData), {
+          headers: {
+            // 'Content-Type': 'text/html',
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+      }
+      );
       setShowSuccessAlert(true);
 
       setFormData({
