@@ -1,15 +1,13 @@
 import React from "react";
-import Maps from "./Maps";
 import { Link } from "react-router-dom";
 import { Avatar, useMediaQuery } from "@mui/material";
-import { Business, Email,  Phone, PhoneIphone } from "@mui/icons-material";
+import { Business, Email, Phone, PhoneIphone } from "@mui/icons-material";
+
 const Footer = () => {
- 
-    const emailAddress = "devlanzzer@gmail.com";
-    const isNonMobile = useMediaQuery("(min-width: 1200px)");
-    return (
-    
-      <>
+  const emailAddress = "devlanzzer@gmail.com";
+  const isNonMobile = useMediaQuery("(min-width: 1200px)");
+  return (
+    <>
       <div className="footer">
         {isNonMobile ? (
           <div className=" text-dark  py-3">
@@ -17,106 +15,123 @@ const Footer = () => {
               <div className="row">
                 <div className="col-3 d-flex justify-content-center align-items-center">
                   <div className="">
-                    <Avatar src="/assets/Logo.png"  alt="" variant="rounded" sx={{  width: 200,
-    height: 267, // Adjusted height to maintain a 3:4 aspect ratio
-    objectFit: "cover"}} />
+                    <Avatar
+                      src="/assets/Logo.png"
+                      alt=""
+                      variant="rounded"
+                      sx={{
+                        width: 200,
+                        height: 267, // Adjusted height to maintain a 3:4 aspect ratio
+                        objectFit: "cover",
+                      }}
+                    />
                   </div>
                   {/* <h2 className="">Past Time Entertainment</h2> */}
                 </div>
-  
+
                 <div className="col-3">
                   <h2 className="">Company</h2>
                   <div className="col list-group ">
-                 
-                  
                     <Link
                       to="/"
                       className="mb-3 text-decoration-none text-dark "
                     >
-                      Home
+                      <span className="underline-on-hover">Home</span>
                     </Link>
                     <Link
                       to="/what-we-do"
-                      className="mb-3 text-decoration-none text-dark"
+                      className="mb-3 text-decoration-none text-dark "
                     >
-                      About
+                      <span className="underline-on-hover">About</span>
                     </Link>
                     <Link
                       to="/events"
                       className="mb-3 text-decoration-none text-dark "
                     >
-                      Clients
+                      <span className="underline-on-hover">Clients</span>
                     </Link>
                     <Link
                       to="/conflict-management"
                       className="mb-3 text-decoration-none text-dark "
                     >
-                      Certifications
+                      <span className="underline-on-hover">Certifications</span>
                     </Link>
                   </div>
                 </div>
                 <div className="col-3">
                   <h2 className="">Projects</h2>
                   <div className="col list-group ">
-                 
                     <Link
                       to="/residential-projects"
                       className="mb-3 text-decoration-none text-dark "
                     >
-                     Residential Projects
+                      <span className="underline-on-hover">Residential</span>
+                      Projects
                     </Link>
                     <Link
                       to="/commercial-projects"
                       className="mb-3 text-decoration-none text-dark "
                     >
-                         Commercial Projects
+                      <span className="underline-on-hover">Commercial</span>
+                      Projects
                     </Link>
                     <Link
                       to="/events"
                       className="mb-3 text-decoration-none text-dark "
                     >
-                      Clients
+                      <span className="underline-on-hover">Clients</span>
                     </Link>
                     <Link
                       to="/conflict-management"
                       className="mb-3 text-decoration-none text-dark "
                     >
-                      Certifications
+                      <span className="underline-on-hover">Certifications</span>
                     </Link>
                   </div>
                 </div>
-  
-               
-  
+
                 <div className="col-3">
                   <h2 className="">Contacts</h2>
                   <div className="col list-group">
-                  <Link
+                    <Link
                       to={`mailto:${emailAddress}`}
                       className="mb-3 text-decoration-none text-dark"
                     >
-                    <Email /> haenggllp@gmail.com
+                      <span className="underline-on-hover">
+                        <Email /> haenggllp@gmail.com
+                      </span>
                     </Link>
                     <p to="" className="mb-3 text-decoration-none text-dark">
-                    <Business />HA Group
-                    <p>B-206, Navkar Chambers, Near Marol Naka Metro Station,Andheri-Kurla Road,Andheri East, mumbai-400059
-Off Tel:- +91 22-28505831/30</p>
-
+                      <span className="underline-on-hover">
+                        <Business />
+                        HA Group
+                        <p>
+                          B-206, Navkar Chambers, Near Marol Naka Metro
+                          Station,Andheri-Kurla Road,Andheri East, mumbai-400059
+                          Off Tel:- +91 22-28505831/30
+                        </p>
+                      </span>
                     </p>
                     <Link
-                    to="https://wa.me/+919821145831"
-                    target="_blank"
-                    className="mb-3 text-decoration-none text-dark"
-                  >
-                    <PhoneIphone />Jameel Ahmed Ghori +91 9821145831
-                  </Link>
-                  <Link
-                    to="https://wa.me/+918767272913"
-                    target="_blank"
-                    className="mb-3 text-decoration-none text-dark"
-                  >
-                    <PhoneIphone />Zebran Ahmed Ghori +91 8767272913
-                  </Link>
+                      to="https://wa.me/+919821145831"
+                      target="_blank"
+                      className="mb-3 text-decoration-none text-dark"
+                    >
+                      <span className="underline-on-hover">
+                        <PhoneIphone />
+                        Jameel Ahmed Ghori +91 9821145831
+                      </span>
+                    </Link>
+                    <Link
+                      to="https://wa.me/+918767272913"
+                      target="_blank"
+                      className="mb-3 text-decoration-none text-dark"
+                    >
+                      <span className="underline-on-hover">
+                        <PhoneIphone />
+                        Zebran Ahmed Ghori +91 8767272913
+                      </span>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -144,9 +159,9 @@ Off Tel:- +91 22-28505831/30</p>
                   data-bs-parent="#accordionExample"
                 >
                   <div className="accordion-body ms-3 text-dark col list-group">
-                  <Link
+                    <Link
                       to="/"
-                      className="mb-3 text-decoration-none text-dark "
+                      className="mb-3 text-decoration-none text-dark"
                     >
                       Home
                     </Link>
@@ -158,7 +173,7 @@ Off Tel:- +91 22-28505831/30</p>
                     </Link>
                     <Link
                       to="/events"
-                      className="mb-3 text-decoration-none text-dark "
+                      className="mb-3 text-decoration-none text-dark"
                     >
                       Clients
                     </Link>
@@ -190,17 +205,17 @@ Off Tel:- +91 22-28505831/30</p>
                   data-bs-parent="#accordionExample"
                 >
                   <div className="accordion-body ms-3 col list-group  text-dark">
-                  <Link
+                    <Link
                       to="/residential-projects"
                       className="mb-3 text-decoration-none text-dark "
                     >
-                     Residential Projects
+                      Residential Projects
                     </Link>
                     <Link
                       to="/commercial-projects"
                       className="mb-3 text-decoration-none text-dark "
                     >
-                         Commercial Projects
+                      Commercial Projects
                     </Link>
                     <Link
                       to="/events"
@@ -240,27 +255,33 @@ Off Tel:- +91 22-28505831/30</p>
                       to={`mailto:${emailAddress}`}
                       className="mb-3 text-decoration-none text-dark"
                     >
-                   <Email /> haenggllp@gmail.com
+                      <Email /> haenggllp@gmail.com
                     </Link>
                     <p to="" className="mb-3 text-decoration-none text-dark">
-                    <Business />HA Group
-                    <p>B-206, Navkar Chambers, Near Marol Naka Metro Station,Andheri-Kurla Road,Andheri East, mumbai-400059
-Off Tel:- +91 22-28505831/30</p>
+                      <Business />
+                      HA Group
+                      <p>
+                        B-206, Navkar Chambers, Near Marol Naka Metro
+                        Station,Andheri-Kurla Road,Andheri East, mumbai-400059
+                        Off Tel:- +91 22-28505831/30
+                      </p>
                     </p>
                     <Link
-                    to="https://wa.me/+919821145831"
-                    target="_blank"
-                    className="mb-3 text-decoration-none text-dark"
-                  >
-                    <PhoneIphone />Jameel Ahmed Ghori +91 9821145831
-                  </Link>
-                  <Link
-                    to="https://wa.me/+918767272913"
-                    target="_blank"
-                    className="mb-3 text-decoration-none text-dark"
-                  >
-                    <PhoneIphone />Zebran Ahmed Ghori +91 8767272913
-                  </Link>
+                      to="https://wa.me/+919821145831"
+                      target="_blank"
+                      className="mb-3 text-decoration-none text-dark"
+                    >
+                      <PhoneIphone />
+                      Jameel Ahmed Ghori +91 9821145831
+                    </Link>
+                    <Link
+                      to="https://wa.me/+918767272913"
+                      target="_blank"
+                      className="mb-3 text-decoration-none text-dark"
+                    >
+                      <PhoneIphone />
+                      Zebran Ahmed Ghori +91 8767272913
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -268,17 +289,10 @@ Off Tel:- +91 22-28505831/30</p>
           </div>
         )}
         <div className=" text-dark p-3 text-center">
-          <span>
-            © Copyright 2023 | All Rights Reserved HA Group
-          </span>
+          <span>© Copyright 2023 | All Rights Reserved HA Group</span>
         </div>
-        </div>
-      </>
-
-
-
-
-   
+      </div>
+    </>
   );
 };
 

@@ -2,12 +2,10 @@ import React from "react";
 import NumberCard from "../components/NumberCard";
 import ChooseCard from "../components/ChooseCard";
 import AboutHome from "../components/AboutHome";
-import Title from "../components/Title";
 import ProjectCard from "../components/ProjectCard";
 import CarouselComp from "../components/CarouselComp";
 import { clients } from "../data/clients";
 import { commercial_projects, residential_project } from "../data/projects";
-import ProjectTable from "../components/ProjectTable";
 import { choose } from "../data/chooseus";
 
 const Home = () => {

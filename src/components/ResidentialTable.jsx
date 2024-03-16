@@ -1,3 +1,4 @@
+import { AnimatePresence, motion } from "framer-motion";
 import React from "react";
 
 const data = [
@@ -231,32 +232,40 @@ const ResidentialTable = () => {
   return (
     <div>
       <div className="table-responsive">
-        <table className="table table-bordered border-dark table-hover shadow border">
-          <thead className="bg-danger">
-            <tr>
-              <th scope="col">Sr No</th>
-              <th scope="col">Site Location</th>
-              <th scope="col">Area</th>
-              <th scope="col">Type</th>
-              <th scope="col">Value</th>
-              <th scope="col">Consultant</th>
-            </tr>
-          </thead>
-          <tbody>
-            {data.map((d) => {
-              return (
-                <tr key={d.srno}>
-                  <th scope="row">{d.srno}</th>
-                  <td>{d.site}</td>
-                  <td>{d.area}</td>
-                  <td>{d.type}</td>
-                  <td>{d.value}</td>
-                  <td>{d.consultant}</td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
+        <AnimatePresence>
+          <table className="table table-bordered border-dark table-hover shadow border">
+            <thead className="bg-danger">
+              <tr>
+                <th scope="col">Sr No</th>
+                <th scope="col">Site Location</th>
+                <th scope="col">Area</th>
+                <th scope="col">Type</th>
+                <th scope="col">Value</th>
+                <th scope="col">Consultant</th>
+              </tr>
+            </thead>
+            <tbody>
+              {data.map((d) => {
+                return (
+                  <motion.tr
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    exit={{ scale: 0 }}
+                    transition={{ duration: 0.3 }}
+                    key={d.srno}
+                  >
+                    <th scope="row">{d.srno}</th>
+                    <td>{d.site}</td>
+                    <td>{d.area}</td>
+                    <td>{d.type}</td>
+                    <td>{d.value}</td>
+                    <td>{d.consultant}</td>
+                  </motion.tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </AnimatePresence>
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import { certificates } from "../data/certificates";
+import { motion } from "framer-motion";
 
 const Certificates = () => {
   return (
@@ -29,14 +30,18 @@ const Certificates = () => {
           {certificates.map((certificate) => (
             <>
               <div className="col p-1 border border-2 certifcates d-flex justify-content-center  align-items-center text-center ">
-                <div className="certifcate-img">
+                <motion.div
+                  whileHover={{ scale: 1.25 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="certifcate-img"
+                >
                   {" "}
                   <img
                     src={certificate.img}
                     className="img-fluid "
                     alt="certificate"
                   />
-                </div>
+                </motion.div>
               </div>
             </>
           ))}

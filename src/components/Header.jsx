@@ -1,24 +1,26 @@
 import { Avatar } from "@mui/material";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+
 // /assets/Logo.png
 const Header = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light phone">
+    <motion.nav
+      className="navbar navbar-expand-lg navbar-light phone"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
       <div className="container-fluid">
         <Link className="navbar-brand ms-2" to="/">
           <Avatar
             src="/assets/Logo.png"
-            // className="shadow-lg"
-            
             alt=""
             sx={{
               width: 100,
               height: 100,
-              objectFit:"cover"
-              
+              objectFit: "cover",
             }}
-            // variant="square"
-
           />
         </Link>
         <button
@@ -34,19 +36,31 @@ const Header = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-            <li className="nav-item mx-3">
-              <Link className="nav-link fs-5 " aria-current="page" to="/">
+            <motion.li
+              className="nav-item mx-3"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <Link
+                className="nav-link fs-5 underline-on-hover"
+                aria-current="page"
+                to="/"
+              >
                 Home
               </Link>
-            </li>
-            <li className="nav-item mx-3">
-              <Link className="nav-link fs-5" to="/profile">
+            </motion.li>
+            <motion.li
+              className="nav-item mx-3"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <Link className="nav-link fs-5 underline-on-hover" to="/profile">
                 About
               </Link>
-            </li>
+            </motion.li>
             <li className="nav-item dropdown mx-3 ">
               <a
-                className="nav-link dropdown-toggle fs-5  "
+                className="nav-link dropdown-toggle fs-5 underline-on-hover"
                 href="#"
                 id="navbarDropdown"
                 role="button"
@@ -59,7 +73,10 @@ const Header = () => {
                 className="dropdown-menu phone shadow"
                 aria-labelledby="navbarDropdown"
               >
-                <li>
+                <motion.li
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                >
                   <Link
                     to="/residential-projects"
                     className="dropdown-item "
@@ -67,8 +84,11 @@ const Header = () => {
                   >
                     Residential
                   </Link>
-                </li>
-                <li>
+                </motion.li>
+                <motion.li
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                >
                   <Link
                     to="/commercial-projects"
                     className="dropdown-item "
@@ -76,28 +96,46 @@ const Header = () => {
                   >
                     Commercial
                   </Link>
-                </li>
+                </motion.li>
               </ul>
             </li>
-            <li className="nav-item mx-3">
-              <Link className="nav-link fs-5" to="/clients">
+            <motion.li
+              className="nav-item mx-3"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <Link className="nav-link fs-5 underline-on-hover" to="/clients">
                 Cients
               </Link>
-            </li>
-            <li className="nav-item mx-3">
-              <Link className="nav-link fs-5" to="/certificate">
+            </motion.li>
+            <motion.li
+              className="nav-item mx-3"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <Link
+                className="nav-link fs-5 underline-on-hover"
+                to="/certificate"
+              >
                 Certificates
               </Link>
-            </li>
-            <li className="nav-item mx-3">
-              <Link className="nav-link fs-5" to="/contact-us">
+            </motion.li>
+            <motion.li
+              className="nav-item mx-3"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <Link
+                className="nav-link fs-5 underline-on-hover"
+                to="/contact-us"
+              >
                 Contact Us
               </Link>
-            </li>
+            </motion.li>
           </ul>
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 

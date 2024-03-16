@@ -1,5 +1,6 @@
 import React from "react";
 import { clients } from "../data/clients";
+import { motion } from "framer-motion";
 
 const Clients = () => {
   return (
@@ -20,17 +21,25 @@ const Clients = () => {
           </p>
         </div>
         <div className="row row-cols-3">
-        {/* className="img-fluid" */}
-        {clients.map((client) => (
-          <>
+          {/* className="img-fluid" */}
+          {clients.map((client) => (
+            <>
               <div className="col border border-2 p-1 clients-logos d-flex justify-content-center  align-items-center text-center ">
-                <div className="brand-logo">
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="brand-logo"
+                >
                   {" "}
-                  <img src={client.img} className="img-fluid " alt="clients"  />
-                </div>
+                  <img
+                    src={client.img}
+                    className="img-fluid "
+                    alt="clients"
+                  />
+                </motion.div>
               </div>
-          </>
-        ))}
+            </>
+          ))}
         </div>
       </div>
     </>
