@@ -22,7 +22,15 @@ const Contact = () => {
     e.preventDefault();
     console.log("formSubmit called");
     try {
-      await axios.post("http://localhost:5001/api/send-email", formData);
+      const response = await axios.post(
+        "/contact_form.php",
+        new URLSearchParams(formData), {
+          headers: {
+            // 'Content-Type': 'text/html',
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+      }
+      );
       setShowSuccessAlert(true);
 
       setFormData({
