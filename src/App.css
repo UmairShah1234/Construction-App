@@ -9,8 +9,19 @@
     /* Add other font weights and styles if needed */
 }
 
+@font-face {
+    font-family: 'Stefania';
+    src: url('/public/assets/fonts/Stefania.ttf') format('truetype');
+    /* Add other font weights and styles if needed */
+}
+
+
 body {
     font-family: 'Avenir Next', sans-serif;
+}
+.companyName{
+    font-family: 'Stefania', sans-serif;
+    font-size: 26px;
 }
 .form{
     grid-area: form;

@@ -23,7 +23,7 @@ const AboutHome = () => {
         <div className="card-body col-md-6">
           <h3>
             About <br />
-            HA Group Of Construction Co. Pvt. Ltd
+            HA Group Of Construction
           </h3>
           <p>
             Welcome to H.A Group, where excellence meets experience. With a rich

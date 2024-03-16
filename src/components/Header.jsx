@@ -12,8 +12,10 @@ const Header = () => {
       transition={{ duration: 1 }}
     >
       <div className="container-fluid">
-        <Link className="navbar-brand ms-2" to="/">
-          <Avatar
+        <Link className="navbar-brand ms-2 " style={{ display: "flex", alignItems: "flex-end" }} to="/">
+          <img style={{objectFit: "cover", width: "70px", height: "70px"}} src="assets/Logo.png" alt="" />
+          {/* <span className="companyName ">H.A - Engg Construction LLP</span> */}
+          {/* <Avatar
             src="/assets/Logo.png"
             alt=""
             sx={{
@@ -21,7 +23,7 @@ const Header = () => {
               height: 100,
               objectFit: "cover",
             }}
-          />
+          /> */}
         </Link>
         <button
           className="navbar-toggler shadow"
@@ -105,7 +107,7 @@ const Header = () => {
               whileTap={{ scale: 0.9 }}
             >
               <Link className="nav-link fs-5 underline-on-hover" to="/clients">
-                Cients
+                Clients
               </Link>
             </motion.li>
             <motion.li
