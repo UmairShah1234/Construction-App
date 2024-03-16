@@ -23,7 +23,7 @@ const Contact = () => {
     console.log("formSubmit called");
     try {
       const response = await axios.post(
-        "/contact_form.php",
+        "https://haconstructions.in/contact_form.php",
         new URLSearchParams(formData), {
           headers: {
             // 'Content-Type': 'text/html',
