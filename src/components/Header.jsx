@@ -13,7 +13,7 @@ const Header = () => {
     >
       <div className="container-fluid">
         <Link className="navbar-brand ms-2 " style={{ display: "flex", alignItems: "flex-end" }} to="/">
-          <img style={{objectFit: "cover", width: "70px", height: "70px"}} src="assets/Logo.png" alt="" />
+          <img style={{objectFit: "cover", width: "270px", height: "65px"}} src="assets/logwith-text-removebg-preview.png" alt="" />
           {/* <span className="companyName ">H.A - Engg Construction LLP</span> */}
           {/* <Avatar
             src="/assets/Logo.png"

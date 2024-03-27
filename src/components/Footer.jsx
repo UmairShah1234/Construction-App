@@ -14,19 +14,20 @@ const Footer = () => {
             <div className="container">
               <div className="row">
                 <div className="col-3 d-flex justify-content-center align-items-center">
+                {/* <img style={{objectFit: "cover", width: "370px", height: "100px"}} src="assets/logwith-text-removebg-preview.png" alt="" /> */}
                   <div className="">
                     <Avatar
-                      src="/assets/Logo.png"
+                      src="assets/Logo-removebg-preview.png"
                       alt=""
                       variant="rounded"
                       sx={{
                         width: 200,
-                        height: 267, // Adjusted height to maintain a 3:4 aspect ratio
+                        height: 270, // Adjusted height to maintain a 3:4 aspect ratio
                         objectFit: "cover",
                       }}
                     />
                   </div>
-                  {/* <h2 className="">Past Time Entertainment</h2> */}
+               
                 </div>
 
                 <div className="col-3">
